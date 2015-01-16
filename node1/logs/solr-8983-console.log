@@ -1,0 +1,972 @@
+0    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
+33   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/shubhanshu/solr/solr-4.10.3/node1/contexts at interval 0
+48   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/shubhanshu/solr/solr-4.10.3/node1/contexts/solr-jetty-context.xml
+112  [main] INFO  org.eclipse.jetty.webapp.WebInfConfiguration  – Extract jar:file:/home/shubhanshu/solr/solr-4.10.3/node1/webapps/solr.war!/ to /home/shubhanshu/solr/solr-4.10.3/node1/solr-webapp/webapp
+2418 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2482 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
+2510 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
+2511 [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /home/shubhanshu/solr/solr-4.10.3/node1/solr
+2511 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/shubhanshu/solr/solr-4.10.3/node1/solr/'
+2665 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/shubhanshu/solr/solr-4.10.3/node1/solr/solr.xml
+3646 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /home/shubhanshu/solr/solr-4.10.3/node1/solr
+3652 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 890960391
+3652 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/home/shubhanshu/solr/solr-4.10.3/node1/solr/]
+3664 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
+3665 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
+3676 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
+3682 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
+3682 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
+3682 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
+3682 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
+3683 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
+3683 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
+3881 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
+3883 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+3884 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+3885 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
+3893 [main] INFO  org.apache.solr.cloud.SolrZkServer  – STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9983
+4394 [main] INFO  org.apache.solr.core.ZkContainer  – Zookeeper client=localhost:9983
+4442 [main] INFO  org.apache.solr.common.cloud.ConnectionManager  – Waiting for client to connect to ZooKeeper
+4565 [main-EventThread] INFO  org.apache.solr.common.cloud.ConnectionManager  – Watcher org.apache.solr.common.cloud.ConnectionManager@189f7f45 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+4566 [main] INFO  org.apache.solr.common.cloud.ConnectionManager  – Client is connected to ZooKeeper
+4603 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /overseer/queue
+4674 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /overseer/collection-queue-work
+4731 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /overseer/collection-map-running
+4776 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /overseer/collection-map-completed
+4820 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /overseer/collection-map-failure
+4871 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /live_nodes
+4899 [main] INFO  org.apache.solr.cloud.ZkController  – Register node as live in ZooKeeper:/live_nodes/127.0.1.1:8983_solr
+4932 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /live_nodes/127.0.1.1:8983_solr
+4965 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /collections
+4989 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /overseer_elect
+5012 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /overseer_elect/election
+5044 [main] INFO  org.apache.solr.cloud.Overseer  – Overseer (id=null) closing
+5098 [main] INFO  org.apache.solr.cloud.ElectionContext  – I am going to be the leader 127.0.1.1:8983_solr
+5108 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /overseer_elect/leader
+5131 [main] INFO  org.apache.solr.cloud.Overseer  – Overseer (id=93152538847019008-127.0.1.1:8983_solr-n_0000000000) starting
+5253 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /overseer/queue-work
+5601 [main] INFO  org.apache.solr.cloud.OverseerAutoReplicaFailoverThread  – Starting OverseerAutoReplicaFailoverThread autoReplicaFailoverWorkLoopDelay=10000 autoReplicaFailoverWaitAfterExpiration=30000 autoReplicaFailoverBadNodeExpiration=60000
+5628 [OverseerCollectionProcessor-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.OverseerCollectionProcessor  – Process current queue of collection creations
+5636 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /clusterstate.json
+5710 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /aliases.json
+5743 [main] INFO  org.apache.solr.common.cloud.ZkStateReader  – Updating cluster state from ZooKeeper... 
+5755 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Starting to work on the main queue
+5775 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/elevate.xml
+5987 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/schema.xml
+6134 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/protwords.txt
+6208 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_hy.txt
+6328 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_no.txt
+6410 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_ro.txt
+6499 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_bg.txt
+6534 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/userdict_ja.txt
+6615 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/contractions_ca.txt
+6643 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_id.txt
+6720 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_fa.txt
+6744 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_tr.txt
+6827 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/contractions_fr.txt
+6861 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_th.txt
+6928 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/hyphenations_ga.txt
+6965 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/contractions_it.txt
+7045 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/contractions_ga.txt
+7115 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_fr.txt
+7183 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_es.txt
+7345 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stoptags_ja.txt
+7448 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_sv.txt
+7568 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_ca.txt
+7649 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_lv.txt
+7688 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_el.txt
+7744 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_cz.txt
+7812 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_nl.txt
+7904 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_fi.txt
+7950 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_da.txt
+8041 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_ckb.txt
+8134 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_en.txt
+8177 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_eu.txt
+8212 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_de.txt
+8285 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_gl.txt
+8365 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_hi.txt
+8443 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stemdict_nl.txt
+8479 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_ga.txt
+8535 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_ja.txt
+8604 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_ar.txt
+8724 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_pt.txt
+8803 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_ru.txt
+8911 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_hu.txt
+9000 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/lang/stopwords_it.txt
+9124 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/solrconfig.xml
+9209 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/admin-extra.menu-bottom.html
+9237 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/_rest_managed.json
+9264 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/_schema_analysis_stopwords_english.json
+9319 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/spellings.txt
+9347 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/_schema_analysis_synonyms_english.json
+9415 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/mapping-ISOLatin1Accent.txt
+9487 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/admin-extra.menu-top.html
+9527 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/admin-extra.html
+9565 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/stopwords.txt
+9644 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/update-script.js
+9681 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/mapping-FoldToASCII.txt
+9765 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/clustering/carrot2/kmeans-attributes.xml
+9866 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/clustering/carrot2/lingo-attributes.xml
+9957 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/clustering/carrot2/stc-attributes.xml
+10032 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/synonyms.txt
+10092 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/currency.xml
+10204 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/scripts.conf
+10276 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/mime_type_lists.vm
+10342 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/query_group.vm
+10818 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/VM_global_library.vm
+10934 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/facets.vm
+10970 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/error.vm
+11023 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/product_doc.vm
+11182 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/hit.vm
+11331 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/results_list.vm
+11422 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/footer.vm
+11532 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/jquery.autocomplete.js
+11612 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/cluster_results.vm
+11729 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/facet_pivot.vm
+11867 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/header.vm
+12007 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/pagination_top.vm
+12151 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/join_doc.vm
+12225 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/pagination_bottom.vm
+12282 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/query_form.vm
+12348 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/head.vm
+12383 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/did_you_mean.vm
+12510 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/debug.vm
+12715 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/hit_plain.vm
+12787 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/layout.vm
+12826 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/tabs.vm
+12853 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/facet_ranges.vm
+12996 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/hit_grouped.vm
+13039 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/README.txt
+13107 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/richtext_doc.vm
+13247 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/query_spatial.vm
+13340 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/suggest.vm
+13432 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/query.vm
+13482 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/facet_fields.vm
+13508 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/browse.vm
+13575 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/cluster.vm
+13606 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/main.css
+13676 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/jquery.autocomplete.css
+13728 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/velocity/facet_queries.vm
+13771 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/xslt/example.xsl
+13886 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/xslt/luke.xsl
+13953 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/xslt/example_atom.xsl
+14032 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/xslt/example_rss.xsl
+14110 [main] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /configs/myconf/xslt/updateXml.xsl
+14183 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /home/shubhanshu/solr/solr-4.10.3/node1/solr
+14194 [main] INFO  org.apache.solr.core.CoresLocator  – Found core collection1 in /home/shubhanshu/solr/solr-4.10.3/node1/solr/collection1/
+14195 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
+14198 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.cloud.ZkController  – publishing core=collection1 state=down collection=collection1
+14199 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.cloud.ZkController  – numShards not found on descriptor - reading it from system property
+14230 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.cloud.ZkController  – look for our core node name
+14231 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+14238 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=1 message={
+  "operation":"state",
+  "numShards":"1",
+  "shard":null,
+  "roles":null,
+  "state":"down",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+14239 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Create collection collection1 with shards [shard1]
+14244 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Assigning new node to shard shard=shard1
+14375 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+15231 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.cloud.ZkController  – waiting to find shard id in clusterstate for collection1
+15231 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.cloud.ZkController  – Check for collection zkNode:collection1
+15232 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.cloud.ZkController  – Creating collection in ZooKeeper:collection1
+15232 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.cloud.ZkController  – Setting config for collection:collection1 to myconf
+15233 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /collections/collection1
+15265 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – Load collection config from:/collections/collection1
+15268 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – path=/collections/collection1 configName=myconf specified config exists in ZooKeeper
+15269 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/shubhanshu/solr/solr-4.10.3/node1/solr/collection1/'
+15361 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+15379 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
+15380 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+15387 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+15387 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+15388 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+15388 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+15388 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+15388 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+15388 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
+15389 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/icu4j-53.1.jar' to classloader
+15389 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-scratchpad-3.10.1.jar' to classloader
+15389 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+15389 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+15390 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-core-1.5.jar' to classloader
+15390 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+15390 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+15390 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
+15390 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+15391 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
+15391 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-3.10.1.jar' to classloader
+15391 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
+15391 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-ooxml-schemas-3.10.1.jar' to classloader
+15391 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+15391 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+15391 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jhighlight-1.0.jar' to classloader
+15392 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jdom-1.0.jar' to classloader
+15392 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-ooxml-3.10.1.jar' to classloader
+15392 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xz-1.4.jar' to classloader
+15392 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+15392 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/rome-0.9.jar' to classloader
+15392 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+15393 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+15394 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-cell-4.10.3.jar' to classloader
+15409 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+15409 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+15409 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+15409 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+15410 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+15410 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+15410 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+15410 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+15411 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-clustering-4.10.3.jar' to classloader
+15413 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+15413 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+15414 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-langid-4.10.3.jar' to classloader
+15414 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+15415 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+15415 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+15415 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/velocity-1.7.jar' to classloader
+15416 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-velocity-4.10.3.jar' to classloader
+18717 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.update.SolrIndexConfig  – IndexWriter infoStream solr logging is enabled
+18725 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.10.3
+18967 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+18980 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /configs/myconf/schema.xml
+19083 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [collection1] Schema name=example
+20038 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+20054 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.RestManager  – Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+20055 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.RestManager  – Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+20185 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.schema.FileExchangeRateProvider  – Reloading exchange rates from file currency.xml
+20196 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.schema.FileExchangeRateProvider  – Reloading exchange rates from file currency.xml
+20367 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'collection1' using configuration from collection collection1
+20414 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.NRTCachingDirectoryFactory
+20422 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Opening new SolrCore at /home/shubhanshu/solr/solr-4.10.3/node1/solr/collection1/, dataDir=/home/shubhanshu/solr/solr-4.10.3/node1/solr/collection1/data/
+20424 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.JmxMonitoredMap  – JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@3af4aa7a
+20455 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+20455 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+20473 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/shubhanshu/solr/solr-4.10.3/node1/solr/collection1/data
+20484 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/shubhanshu/solr/solr-4.10.3/node1/solr/collection1/data/index/
+20484 [coreLoadExecutor-6-thread-1] WARN  org.apache.solr.core.SolrCore  – [collection1] Solr index directory '/home/shubhanshu/solr/solr-4.10.3/node1/solr/collection1/data/index' doesn't exist. Creating new index...
+20498 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/shubhanshu/solr/solr-4.10.3/node1/solr/collection1/data/index
+20824 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/shubhanshu/solr/solr-4.10.3/node1/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/shubhanshu/solr/solr-4.10.3/node1/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+20825 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
+20836 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – created json: solr.JSONResponseWriter
+20837 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – adding lazy queryResponseWriter: solr.VelocityResponseWriter
+20838 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – created velocity: solr.VelocityResponseWriter
+20843 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – created xslt: solr.XSLTResponseWriter
+20843 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.response.XSLTResponseWriter  – xsltCacheLifetimeSeconds=5
+20941 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+20989 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
+20990 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
+20991 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+20992 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+20998 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /select: solr.SearchHandler
+20999 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /query: solr.SearchHandler
+21002 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /get: solr.RealTimeGetHandler
+21003 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /export: solr.SearchHandler
+21004 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /browse: solr.SearchHandler
+21006 [coreLoadExecutor-6-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+21007 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+21007 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+21008 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/extract: solr.extraction.ExtractingRequestHandler
+21009 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+21009 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+21010 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+21011 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/document: solr.DocumentAnalysisRequestHandler
+21016 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: solr.admin.AdminHandlers
+21022 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+21025 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /debug/dump: solr.DumpRequestHandler
+21034 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+21034 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+21035 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /spell: solr.SearchHandler
+21035 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+21035 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /tvrh: solr.SearchHandler
+21035 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+21035 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /terms: solr.SearchHandler
+21035 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+21036 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /elevate: solr.SearchHandler
+21232 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+21235 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+21235 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+21236 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+21238 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+21258 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: if uncommited for 15000ms; 
+21259 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
+21336 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/shubhanshu/solr/solr-4.10.3/node1/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/shubhanshu/solr/solr-4.10.3/node1/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+21336 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
+21345 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@51080940[collection1] main
+21351 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – Load collection config from:/collections/collection1
+21352 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – path=/collections/collection1 configName=myconf specified config exists in ZooKeeper
+21353 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/myconf
+21354 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Configured ZooKeeperStorageIO with znodeBase: /configs/myconf
+21355 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {}
+21356 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/myconf
+21357 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Read 34 bytes from znode /configs/myconf/_rest_managed.json
+21358 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/myconf
+21358 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
+21358 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 2 registered ManagedResources
+21359 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/myconf
+21360 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Read 488 bytes from znode /configs/myconf/_schema_analysis_stopwords_english.json
+21360 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/myconf
+21360 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+21360 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded 35 words for /schema/analysis/stopwords/english
+21361 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Notified 1 observers of /schema/analysis/stopwords/english
+21361 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/myconf
+21362 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Read 183 bytes from znode /configs/myconf/_schema_analysis_synonyms_english.json
+21362 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/myconf
+21363 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+21363 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+21365 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Notified 1 observers of /schema/analysis/synonyms/english
+21366 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+21372 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.spelling.DirectSolrSpellChecker  – init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+21379 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+21394 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – Load collection config from:/collections/collection1
+21397 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – path=/collections/collection1 configName=myconf specified config exists in ZooKeeper
+21424 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.handler.ReplicationHandler  – Commits will be reserved for  10000
+21424 [searcherExecutor-7-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@51080940[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+21472 [searcherExecutor-7-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=47 
+21473 [searcherExecutor-7-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
+21473 [searcherExecutor-7-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: default
+21473 [searcherExecutor-7-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: wordbreak
+21477 [searcherExecutor-7-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Registered new searcher Searcher@51080940[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+21480 [coreLoadExecutor-6-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: collection1
+21483 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.ZkController  – Register replica - core:collection1 address:http://127.0.1.1:8983/solr collection:collection1 shard:shard1
+21483 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/shubhanshu/solr/solr-4.10.3/node1
+21484 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
+21489 [coreZkRegister-1-thread-1] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /collections/collection1/leader_elect/shard1/election
+21512 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
+21693 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – Running the leader process for shard shard1
+21749 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+21750 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – Enough replicas found to continue.
+21751 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – I may be the new leader - try and sync
+21753 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.SyncStrategy  – Sync replicas to http://127.0.1.1:8983/solr/collection1/
+21753 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.SyncStrategy  – Sync Success - now sync replicas to me
+21753 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.SyncStrategy  – http://127.0.1.1:8983/solr/collection1/ has no replicas
+21753 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – I am the new leader: http://127.0.1.1:8983/solr/collection1/ shard1
+21755 [coreZkRegister-1-thread-1] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /collections/collection1/leaders/shard1
+21860 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+22026 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+22052 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+22123 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.ZkController  – We are http://127.0.1.1:8983/solr/collection1/ and leader is http://127.0.1.1:8983/solr/collection1/
+22124 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.ZkController  – No LogReplay needed for core=collection1 baseURL=http://127.0.1.1:8983/solr
+22124 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.ZkController  – I am the leader, no recovery necessary
+22125 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.ZkController  – publishing core=collection1 state=active collection=collection1
+22125 [coreZkRegister-1-thread-1] INFO  org.apache.solr.cloud.ZkController  – numShards not found on descriptor - reading it from system property
+22198 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+22201 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=1 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"1",
+  "shard":"shard1",
+  "roles":null,
+  "state":"active",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+22397 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+51486 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+51489 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=1 message={
+  "operation":"state",
+  "numShards":"1",
+  "shard":null,
+  "roles":null,
+  "state":"down",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+51489 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Collection already exists with numShards=1
+51489 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Assigning new node to shard shard=shard1
+51995 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+56305 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+56309 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=1 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"1",
+  "shard":"shard1",
+  "roles":null,
+  "state":"recovering",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+56452 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+56941 [qtp1867134498-17] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – Going to wait for coreNodeName: core_node2, state: recovering, checkLive: true, onlyIfLeader: true, onlyIfLeaderActive: true
+56943 [qtp1867134498-17] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – Will wait a max of 183 seconds to see collection1 (shard1 of collection1) have state: recovering
+56943 [qtp1867134498-17] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – In WaitForState(recovering): collection=collection1, shard=shard1, thisCore=collection1, leaderDoesNotNeedRecovery=false, isLeader? true, live=true, checkLive=true, currentState=recovering, localState=active, nodeName=127.0.1.1:7574_solr, coreNodeName=core_node2, onlyIfActiveCheckResult=false, nodeProps: core_node2:{"state":"recovering","core":"collection1","node_name":"127.0.1.1:7574_solr","base_url":"http://127.0.1.1:7574/solr"}
+56943 [qtp1867134498-17] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – Waited coreNodeName: core_node2, state: recovering, checkLive: true, onlyIfLeader: true for: 0 seconds.
+56943 [qtp1867134498-17] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={coreNodeName=core_node2&onlyIfLeaderActive=true&state=recovering&nodeName=127.0.1.1:7574_solr&action=PREPRECOVERY&checkLive=true&core=collection1&wt=javabin&onlyIfLeader=true&version=2} status=0 QTime=3 
+59016 [qtp1867134498-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/get params={getVersions=100&distrib=false&wt=javabin&qt=/get&version=2} status=0 QTime=2 
+59024 [qtp1867134498-18] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+59024 [qtp1867134498-18] INFO  org.apache.solr.update.UpdateHandler  – No uncommitted changes. Skipping IW.commit.
+59025 [qtp1867134498-18] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+59025 [qtp1867134498-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [collection1] webapp=/solr path=/update params={waitSearcher=true&openSearcher=false&commit=true&wt=javabin&commit_end_point=true&version=2&softCommit=false} {commit=} 0 11
+59031 [qtp1867134498-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/replication params={command=indexversion&qt=/replication&wt=javabin&version=2} status=0 QTime=0 
+59129 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+59132 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=1 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"1",
+  "shard":"shard1",
+  "roles":null,
+  "state":"active",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+59295 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+76787 [SyncThread:0] WARN  org.apache.zookeeper.server.persistence.FileTxnLog  – fsync-ing the write ahead log in SyncThread:0 took 1237ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide
+78785 [qtp1867134498-17] INFO  org.apache.solr.handler.admin.CollectionsHandler  – Creating Collection : numShards=2&indent=2&maxShardsPerNode=2&collection.configName=default&name=gettingstarted&replicationFactor=2&action=CREATE&wt=json
+78842 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/collection-queue-work state: SyncConnected type NodeChildrenChanged
+78873 [OverseerCollectionProcessor-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.OverseerCollectionProcessor  – Overseer Collection Processor: Get the message id:/overseer/collection-queue-work/qn-0000000000 message:{
+  "operation":"createcollection",
+  "fromApi":"true",
+  "name":"gettingstarted",
+  "replicationFactor":"2",
+  "collection.configName":"default",
+  "numShards":"2",
+  "maxShardsPerNode":"2"}
+78875 [OverseerThreadFactory-4-thread-1] WARN  org.apache.solr.cloud.OverseerCollectionProcessor  – OverseerCollectionProcessor.processMessage : createcollection , {
+  "operation":"createcollection",
+  "fromApi":"true",
+  "name":"gettingstarted",
+  "replicationFactor":"2",
+  "collection.configName":"default",
+  "numShards":"2",
+  "maxShardsPerNode":"2"}
+78876 [OverseerThreadFactory-4-thread-1] INFO  org.apache.solr.cloud.OverseerCollectionProcessor  – creating collections conf node /collections/gettingstarted 
+78876 [OverseerThreadFactory-4-thread-1] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /collections/gettingstarted
+78961 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+78967 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – building a new collection: gettingstarted
+78967 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Create collection gettingstarted with shards [shard1, shard2]
+79059 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+79162 [OverseerThreadFactory-4-thread-1] INFO  org.apache.solr.cloud.OverseerCollectionProcessor  – Creating SolrCores for new collection gettingstarted, shardNames [shard1, shard2] , replicationFactor : 2
+79162 [OverseerThreadFactory-4-thread-1] INFO  org.apache.solr.cloud.OverseerCollectionProcessor  – Creating shard gettingstarted_shard1_replica1 as part of slice shard1 of collection gettingstarted on 127.0.1.1:7574_solr
+79165 [OverseerThreadFactory-4-thread-1] INFO  org.apache.solr.cloud.OverseerCollectionProcessor  – Creating shard gettingstarted_shard1_replica2 as part of slice shard1 of collection gettingstarted on 127.0.1.1:8983_solr
+79166 [OverseerThreadFactory-4-thread-1] INFO  org.apache.solr.cloud.OverseerCollectionProcessor  – Creating shard gettingstarted_shard2_replica1 as part of slice shard2 of collection gettingstarted on 127.0.1.1:7574_solr
+79167 [OverseerThreadFactory-4-thread-1] INFO  org.apache.solr.cloud.OverseerCollectionProcessor  – Creating shard gettingstarted_shard2_replica2 as part of slice shard2 of collection gettingstarted on 127.0.1.1:8983_solr
+79320 [qtp1867134498-14] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – core create command numShards=2&shard=shard2&collection.configName=default&name=gettingstarted_shard2_replica2&action=CREATE&collection=gettingstarted&wt=javabin&qt=/admin/cores&version=2
+79321 [qtp1867134498-18] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – core create command numShards=2&shard=shard1&collection.configName=default&name=gettingstarted_shard1_replica2&action=CREATE&collection=gettingstarted&wt=javabin&qt=/admin/cores&version=2
+79324 [qtp1867134498-18] INFO  org.apache.solr.cloud.ZkController  – publishing core=gettingstarted_shard1_replica2 state=down collection=gettingstarted
+79324 [qtp1867134498-14] INFO  org.apache.solr.cloud.ZkController  – publishing core=gettingstarted_shard2_replica2 state=down collection=gettingstarted
+79372 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+79372 [qtp1867134498-18] INFO  org.apache.solr.cloud.ZkController  – look for our core node name
+79485 [qtp1867134498-14] INFO  org.apache.solr.cloud.ZkController  – look for our core node name
+79488 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=2 message={
+  "operation":"state",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard1_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+79594 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=2 message={
+  "operation":"state",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard2_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+79647 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+79683 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+79805 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+79850 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=2 message={
+  "operation":"state",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard1_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+79907 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=2 message={
+  "operation":"state",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard2_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+80016 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+80047 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+80373 [qtp1867134498-18] INFO  org.apache.solr.cloud.ZkController  – waiting to find shard id in clusterstate for gettingstarted_shard1_replica2
+80373 [qtp1867134498-18] INFO  org.apache.solr.cloud.ZkController  – Check for collection zkNode:gettingstarted
+80373 [qtp1867134498-18] INFO  org.apache.solr.cloud.ZkController  – Collection zkNode exists
+80374 [qtp1867134498-18] INFO  org.apache.solr.common.cloud.ZkStateReader  – Load collection config from:/collections/gettingstarted
+80374 [qtp1867134498-18] INFO  org.apache.solr.common.cloud.ZkStateReader  – path=/collections/gettingstarted configName=default specified config exists in ZooKeeper
+80374 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard1_replica2/'
+80442 [qtp1867134498-18] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+80444 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
+80445 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+80446 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+80446 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+80446 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+80447 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+80447 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+80447 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+80448 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
+80448 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/icu4j-53.1.jar' to classloader
+80448 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-scratchpad-3.10.1.jar' to classloader
+80449 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+80449 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+80449 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-core-1.5.jar' to classloader
+80450 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+80450 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+80450 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
+80451 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+80451 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
+80451 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-3.10.1.jar' to classloader
+80452 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
+80452 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-ooxml-schemas-3.10.1.jar' to classloader
+80452 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+80452 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+80453 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jhighlight-1.0.jar' to classloader
+80453 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jdom-1.0.jar' to classloader
+80453 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-ooxml-3.10.1.jar' to classloader
+80454 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xz-1.4.jar' to classloader
+80454 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+80454 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/rome-0.9.jar' to classloader
+80455 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+80455 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+80473 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-cell-4.10.3.jar' to classloader
+80486 [qtp1867134498-14] INFO  org.apache.solr.cloud.ZkController  – waiting to find shard id in clusterstate for gettingstarted_shard2_replica2
+80486 [qtp1867134498-14] INFO  org.apache.solr.cloud.ZkController  – Check for collection zkNode:gettingstarted
+80486 [qtp1867134498-14] INFO  org.apache.solr.cloud.ZkController  – Collection zkNode exists
+80487 [qtp1867134498-14] INFO  org.apache.solr.common.cloud.ZkStateReader  – Load collection config from:/collections/gettingstarted
+80488 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+80488 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+80489 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+80489 [qtp1867134498-14] INFO  org.apache.solr.common.cloud.ZkStateReader  – path=/collections/gettingstarted configName=default specified config exists in ZooKeeper
+80489 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+80489 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard2_replica2/'
+80490 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+80490 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+80490 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+80491 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+80492 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-clustering-4.10.3.jar' to classloader
+80518 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+80519 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+80520 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-langid-4.10.3.jar' to classloader
+80521 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+80521 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+80522 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+80522 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/velocity-1.7.jar' to classloader
+80523 [qtp1867134498-18] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-velocity-4.10.3.jar' to classloader
+80592 [qtp1867134498-14] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+80594 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
+80594 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+80595 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+80595 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+80595 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+80596 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+80596 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+80596 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+80597 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
+80597 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/icu4j-53.1.jar' to classloader
+80597 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-scratchpad-3.10.1.jar' to classloader
+80597 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+80598 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+80598 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-core-1.5.jar' to classloader
+80598 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+80599 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+80599 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
+80599 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+80600 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
+80600 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-3.10.1.jar' to classloader
+80600 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
+80600 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-ooxml-schemas-3.10.1.jar' to classloader
+80608 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+80609 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+80609 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jhighlight-1.0.jar' to classloader
+80609 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jdom-1.0.jar' to classloader
+80609 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-ooxml-3.10.1.jar' to classloader
+80610 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xz-1.4.jar' to classloader
+80610 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+80610 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/rome-0.9.jar' to classloader
+80611 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+80611 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+80612 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-cell-4.10.3.jar' to classloader
+80613 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+80617 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+80617 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+80618 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+80618 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+80619 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+80619 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+80619 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+80620 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-clustering-4.10.3.jar' to classloader
+80621 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+80613 [qtp1867134498-18] INFO  org.apache.solr.update.SolrIndexConfig  – IndexWriter infoStream solr logging is enabled
+80626 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+80627 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-langid-4.10.3.jar' to classloader
+80628 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+80629 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+80629 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+80631 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/velocity-1.7.jar' to classloader
+80632 [qtp1867134498-14] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-velocity-4.10.3.jar' to classloader
+80631 [qtp1867134498-18] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.10.3
+80726 [qtp1867134498-14] INFO  org.apache.solr.update.SolrIndexConfig  – IndexWriter infoStream solr logging is enabled
+80736 [qtp1867134498-14] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.10.3
+80805 [qtp1867134498-18] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+80822 [qtp1867134498-18] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /configs/default/schema.xml
+82169 [qtp1867134498-18] INFO  org.apache.solr.schema.IndexSchema  – [gettingstarted_shard1_replica2] Schema name=example
+82174 [qtp1867134498-14] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+82184 [qtp1867134498-14] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /configs/default/schema.xml
+82390 [qtp1867134498-14] INFO  org.apache.solr.schema.IndexSchema  – [gettingstarted_shard2_replica2] Schema name=example
+84069 [qtp1867134498-18] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+84073 [qtp1867134498-18] INFO  org.apache.solr.rest.RestManager  – Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+84095 [qtp1867134498-18] INFO  org.apache.solr.rest.RestManager  – Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+84145 [qtp1867134498-14] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+84149 [qtp1867134498-14] INFO  org.apache.solr.rest.RestManager  – Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+84150 [qtp1867134498-14] INFO  org.apache.solr.rest.RestManager  – Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+84220 [qtp1867134498-18] INFO  org.apache.solr.schema.FileExchangeRateProvider  – Reloading exchange rates from file currency.xml
+84250 [qtp1867134498-14] INFO  org.apache.solr.schema.FileExchangeRateProvider  – Reloading exchange rates from file currency.xml
+84252 [qtp1867134498-18] INFO  org.apache.solr.schema.FileExchangeRateProvider  – Reloading exchange rates from file currency.xml
+84271 [qtp1867134498-14] INFO  org.apache.solr.schema.FileExchangeRateProvider  – Reloading exchange rates from file currency.xml
+84631 [qtp1867134498-18] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'gettingstarted_shard1_replica2' using configuration from collection gettingstarted
+84636 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – solr.NRTCachingDirectoryFactory
+84636 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard1_replica2] Opening new SolrCore at /home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard1_replica2/, dataDir=/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard1_replica2/data/
+84639 [qtp1867134498-18] INFO  org.apache.solr.core.JmxMonitoredMap  – JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@3af4aa7a
+84649 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard1_replica2] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+84649 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard1_replica2] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+84650 [qtp1867134498-18] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard1_replica2/data
+84654 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard1_replica2/data/index/
+84654 [qtp1867134498-18] WARN  org.apache.solr.core.SolrCore  – [gettingstarted_shard1_replica2] Solr index directory '/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard1_replica2/data/index' doesn't exist. Creating new index...
+84655 [qtp1867134498-18] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard1_replica2/data/index
+84703 [qtp1867134498-14] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'gettingstarted_shard2_replica2' using configuration from collection gettingstarted
+84717 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – solr.NRTCachingDirectoryFactory
+84718 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard2_replica2] Opening new SolrCore at /home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard2_replica2/, dataDir=/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard2_replica2/data/
+84718 [qtp1867134498-14] INFO  org.apache.solr.core.JmxMonitoredMap  – JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@3af4aa7a
+84721 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard2_replica2] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+84721 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard2_replica2] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+84722 [qtp1867134498-14] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard2_replica2/data
+84726 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard2_replica2/data/index/
+84746 [qtp1867134498-14] WARN  org.apache.solr.core.SolrCore  – [gettingstarted_shard2_replica2] Solr index directory '/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard2_replica2/data/index' doesn't exist. Creating new index...
+84746 [qtp1867134498-14] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard2_replica2/data/index
+85016 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard1_replica2/data/index lockFactory=NativeFSLockFactory@/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard1_replica2/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+85017 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
+85018 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – created json: solr.JSONResponseWriter
+85018 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – adding lazy queryResponseWriter: solr.VelocityResponseWriter
+85019 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – created velocity: solr.VelocityResponseWriter
+85019 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – created xslt: solr.XSLTResponseWriter
+85019 [qtp1867134498-18] INFO  org.apache.solr.response.XSLTResponseWriter  – xsltCacheLifetimeSeconds=5
+85026 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+85027 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
+85029 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
+85030 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+85036 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+85037 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /select: solr.SearchHandler
+85038 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /query: solr.SearchHandler
+85039 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /get: solr.RealTimeGetHandler
+85045 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /export: solr.SearchHandler
+85046 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /browse: solr.SearchHandler
+85046 [qtp1867134498-18] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+85047 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+85047 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+85047 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /update/extract: solr.extraction.ExtractingRequestHandler
+85047 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+85048 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+85048 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+85048 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/document: solr.DocumentAnalysisRequestHandler
+85048 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: solr.admin.AdminHandlers
+85049 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+85050 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /debug/dump: solr.DumpRequestHandler
+85051 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+85051 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+85051 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /spell: solr.SearchHandler
+85051 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+85052 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /tvrh: solr.SearchHandler
+85052 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+85052 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /terms: solr.SearchHandler
+85052 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+85052 [qtp1867134498-18] INFO  org.apache.solr.core.RequestHandlers  – created /elevate: solr.SearchHandler
+85058 [qtp1867134498-18] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+85063 [qtp1867134498-18] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+85065 [qtp1867134498-18] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+85066 [qtp1867134498-18] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+85068 [qtp1867134498-18] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+85074 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: if uncommited for 15000ms; 
+85074 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
+85078 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard1_replica2/data/index lockFactory=NativeFSLockFactory@/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard1_replica2/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+85078 [qtp1867134498-18] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
+85079 [qtp1867134498-18] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@246b0ed0[gettingstarted_shard1_replica2] main
+85079 [qtp1867134498-18] INFO  org.apache.solr.common.cloud.ZkStateReader  – Load collection config from:/collections/gettingstarted
+85080 [qtp1867134498-18] INFO  org.apache.solr.common.cloud.ZkStateReader  – path=/collections/gettingstarted configName=default specified config exists in ZooKeeper
+85081 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResourceStorage  – Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/default
+85081 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResourceStorage  – Configured ZooKeeperStorageIO with znodeBase: /configs/default
+85082 [qtp1867134498-18] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {}
+85082 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/default
+85082 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard2_replica2/data/index lockFactory=NativeFSLockFactory@/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard2_replica2/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+85083 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
+85085 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – created json: solr.JSONResponseWriter
+85085 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – adding lazy queryResponseWriter: solr.VelocityResponseWriter
+85086 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – created velocity: solr.VelocityResponseWriter
+85086 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – created xslt: solr.XSLTResponseWriter
+85086 [qtp1867134498-14] INFO  org.apache.solr.response.XSLTResponseWriter  – xsltCacheLifetimeSeconds=5
+85092 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResourceStorage  – Read 34 bytes from znode /configs/default/_rest_managed.json
+85092 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/default
+85093 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
+85093 [qtp1867134498-18] INFO  org.apache.solr.rest.RestManager  – Initializing 2 registered ManagedResources
+85093 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/default
+85098 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+85099 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResourceStorage  – Read 488 bytes from znode /configs/default/_schema_analysis_stopwords_english.json
+85101 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/default
+85102 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+85102 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
+85102 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResource  – Loaded 35 words for /schema/analysis/stopwords/english
+85103 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResource  – Notified 1 observers of /schema/analysis/stopwords/english
+85103 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/default
+85104 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
+85104 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResourceStorage  – Read 183 bytes from znode /configs/default/_schema_analysis_synonyms_english.json
+85105 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/default
+85105 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+85106 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+85106 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResource  – Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+85107 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+85108 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /select: solr.SearchHandler
+85108 [qtp1867134498-18] INFO  org.apache.solr.rest.ManagedResource  – Notified 1 observers of /schema/analysis/synonyms/english
+85109 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /query: solr.SearchHandler
+85109 [qtp1867134498-18] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+85111 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /get: solr.RealTimeGetHandler
+85112 [qtp1867134498-18] INFO  org.apache.solr.spelling.DirectSolrSpellChecker  – init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+85113 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /export: solr.SearchHandler
+85114 [qtp1867134498-18] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+85115 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /browse: solr.SearchHandler
+85116 [qtp1867134498-18] INFO  org.apache.solr.common.cloud.ZkStateReader  – Load collection config from:/collections/gettingstarted
+85117 [qtp1867134498-14] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+85118 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+85118 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+85118 [qtp1867134498-18] INFO  org.apache.solr.common.cloud.ZkStateReader  – path=/collections/gettingstarted configName=default specified config exists in ZooKeeper
+85119 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /update/extract: solr.extraction.ExtractingRequestHandler
+85120 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+85121 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+85121 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+85122 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/document: solr.DocumentAnalysisRequestHandler
+85123 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: solr.admin.AdminHandlers
+85124 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+85125 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /debug/dump: solr.DumpRequestHandler
+85129 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+85131 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+85141 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /spell: solr.SearchHandler
+85142 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+85142 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /tvrh: solr.SearchHandler
+85142 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+85143 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /terms: solr.SearchHandler
+85143 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+85144 [qtp1867134498-14] INFO  org.apache.solr.core.RequestHandlers  – created /elevate: solr.SearchHandler
+85153 [qtp1867134498-18] INFO  org.apache.solr.handler.ReplicationHandler  – Commits will be reserved for  10000
+85154 [searcherExecutor-11-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@246b0ed0[gettingstarted_shard1_replica2] main{StandardDirectoryReader(segments_1:1:nrt)}
+85147 [qtp1867134498-14] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+85157 [searcherExecutor-11-thread-1] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard1_replica2] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=1 
+85157 [searcherExecutor-11-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
+85158 [qtp1867134498-14] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+85158 [searcherExecutor-11-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: default
+85158 [searcherExecutor-11-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: wordbreak
+85164 [searcherExecutor-11-thread-1] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard1_replica2] Registered new searcher Searcher@246b0ed0[gettingstarted_shard1_replica2] main{StandardDirectoryReader(segments_1:1:nrt)}
+85164 [qtp1867134498-14] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+85165 [qtp1867134498-14] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+85167 [qtp1867134498-14] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+85171 [qtp1867134498-18] INFO  org.apache.solr.core.CoreContainer  – registering core: gettingstarted_shard1_replica2
+85173 [qtp1867134498-18] INFO  org.apache.solr.cloud.ZkController  – Register replica - core:gettingstarted_shard1_replica2 address:http://127.0.1.1:8983/solr collection:gettingstarted shard:shard1
+85173 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: if uncommited for 15000ms; 
+85180 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
+85183 [qtp1867134498-18] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /collections/gettingstarted/leader_elect/shard1/election
+85184 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard2_replica2/data/index lockFactory=NativeFSLockFactory@/home/shubhanshu/solr/solr-4.10.3/node1/solr/gettingstarted_shard2_replica2/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+85184 [qtp1867134498-14] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
+85185 [qtp1867134498-14] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@3dbb57d9[gettingstarted_shard2_replica2] main
+85186 [qtp1867134498-14] INFO  org.apache.solr.common.cloud.ZkStateReader  – Load collection config from:/collections/gettingstarted
+85216 [qtp1867134498-14] INFO  org.apache.solr.common.cloud.ZkStateReader  – path=/collections/gettingstarted configName=default specified config exists in ZooKeeper
+85217 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResourceStorage  – Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/default
+85266 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResourceStorage  – Configured ZooKeeperStorageIO with znodeBase: /configs/default
+85266 [qtp1867134498-14] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {}
+85266 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/default
+85269 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResourceStorage  – Read 34 bytes from znode /configs/default/_rest_managed.json
+85270 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/default
+85271 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
+85272 [qtp1867134498-14] INFO  org.apache.solr.rest.RestManager  – Initializing 2 registered ManagedResources
+85272 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/default
+85316 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResourceStorage  – Read 488 bytes from znode /configs/default/_schema_analysis_stopwords_english.json
+85337 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/default
+85338 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+85338 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResource  – Loaded 35 words for /schema/analysis/stopwords/english
+85339 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResource  – Notified 1 observers of /schema/analysis/stopwords/english
+85339 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/default
+85573 [qtp1867134498-18] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – Running the leader process for shard shard1
+85573 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResourceStorage  – Read 183 bytes from znode /configs/default/_schema_analysis_synonyms_english.json
+85574 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/default
+85574 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+85574 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResource  – Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+85575 [qtp1867134498-14] INFO  org.apache.solr.rest.ManagedResource  – Notified 1 observers of /schema/analysis/synonyms/english
+85576 [qtp1867134498-14] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+85576 [qtp1867134498-14] INFO  org.apache.solr.spelling.DirectSolrSpellChecker  – init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+85577 [qtp1867134498-14] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+85577 [qtp1867134498-14] INFO  org.apache.solr.common.cloud.ZkStateReader  – Load collection config from:/collections/gettingstarted
+85661 [qtp1867134498-14] INFO  org.apache.solr.common.cloud.ZkStateReader  – path=/collections/gettingstarted configName=default specified config exists in ZooKeeper
+85727 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+85729 [qtp1867134498-18] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoutin=5.1693429E13ms
+85734 [qtp1867134498-14] INFO  org.apache.solr.handler.ReplicationHandler  – Commits will be reserved for  10000
+85734 [searcherExecutor-12-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@3dbb57d9[gettingstarted_shard2_replica2] main{StandardDirectoryReader(segments_1:1:nrt)}
+85736 [searcherExecutor-12-thread-1] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard2_replica2] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=1 
+85736 [searcherExecutor-12-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
+85736 [searcherExecutor-12-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: default
+85736 [searcherExecutor-12-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: wordbreak
+85738 [searcherExecutor-12-thread-1] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard2_replica2] Registered new searcher Searcher@3dbb57d9[gettingstarted_shard2_replica2] main{StandardDirectoryReader(segments_1:1:nrt)}
+85743 [qtp1867134498-14] INFO  org.apache.solr.core.CoreContainer  – registering core: gettingstarted_shard2_replica2
+85744 [qtp1867134498-14] INFO  org.apache.solr.cloud.ZkController  – Register replica - core:gettingstarted_shard2_replica2 address:http://127.0.1.1:8983/solr collection:gettingstarted shard:shard2
+85783 [qtp1867134498-14] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /collections/gettingstarted/leader_elect/shard2/election
+85976 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+86324 [qtp1867134498-18] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – Enough replicas found to continue.
+86325 [qtp1867134498-18] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – I may be the new leader - try and sync
+86325 [qtp1867134498-18] INFO  org.apache.solr.cloud.SyncStrategy  – Sync replicas to http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/
+86328 [qtp1867134498-18] INFO  org.apache.solr.update.PeerSync  – PeerSync: core=gettingstarted_shard1_replica2 url=http://127.0.1.1:8983/solr START replicas=[http://127.0.1.1:7574/solr/gettingstarted_shard1_replica1/] nUpdates=100
+86329 [qtp1867134498-18] INFO  org.apache.solr.update.PeerSync  – PeerSync: core=gettingstarted_shard1_replica2 url=http://127.0.1.1:8983/solr DONE.  We have no versions.  sync failed.
+86329 [qtp1867134498-18] INFO  org.apache.solr.cloud.SyncStrategy  – Leader's attempt to sync with shard failed, moving to the next candidate
+86329 [qtp1867134498-18] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+86330 [qtp1867134498-18] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – I am the new leader: http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/ shard1
+86330 [qtp1867134498-18] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /collections/gettingstarted/leaders/shard1
+86371 [qtp1867134498-14] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – Running the leader process for shard shard2
+86503 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+86503 [qtp1867134498-14] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – Enough replicas found to continue.
+86503 [qtp1867134498-14] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – I may be the new leader - try and sync
+86503 [qtp1867134498-14] INFO  org.apache.solr.cloud.SyncStrategy  – Sync replicas to http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/
+86504 [qtp1867134498-14] INFO  org.apache.solr.update.PeerSync  – PeerSync: core=gettingstarted_shard2_replica2 url=http://127.0.1.1:8983/solr START replicas=[http://127.0.1.1:7574/solr/gettingstarted_shard2_replica1/] nUpdates=100
+86505 [qtp1867134498-14] INFO  org.apache.solr.update.PeerSync  – PeerSync: core=gettingstarted_shard2_replica2 url=http://127.0.1.1:8983/solr DONE.  We have no versions.  sync failed.
+86505 [qtp1867134498-14] INFO  org.apache.solr.cloud.SyncStrategy  – Leader's attempt to sync with shard failed, moving to the next candidate
+86505 [qtp1867134498-14] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+86505 [qtp1867134498-14] INFO  org.apache.solr.cloud.ShardLeaderElectionContext  – I am the new leader: http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/ shard2
+86506 [qtp1867134498-14] INFO  org.apache.solr.common.cloud.SolrZkClient  – makePath: /collections/gettingstarted/leaders/shard2
+87029 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+87127 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+87147 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+87274 [qtp1867134498-20] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – Going to wait for coreNodeName: core_node3, state: recovering, checkLive: true, onlyIfLeader: true, onlyIfLeaderActive: true
+87311 [qtp1867134498-20] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – Will wait a max of 183 seconds to see gettingstarted_shard1_replica2 (shard1 of gettingstarted) have state: recovering
+87312 [qtp1867134498-20] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – In WaitForState(recovering): collection=gettingstarted, shard=shard1, thisCore=gettingstarted_shard1_replica2, leaderDoesNotNeedRecovery=false, isLeader? true, live=true, checkLive=true, currentState=down, localState=active, nodeName=127.0.1.1:7574_solr, coreNodeName=core_node3, onlyIfActiveCheckResult=false, nodeProps: core_node3:{"state":"down","core":"gettingstarted_shard1_replica1","node_name":"127.0.1.1:7574_solr","base_url":"http://127.0.1.1:7574/solr"}
+87312 [qtp1867134498-14] INFO  org.apache.solr.cloud.ZkController  – We are http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/ and leader is http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/
+87313 [qtp1867134498-14] INFO  org.apache.solr.cloud.ZkController  – No LogReplay needed for core=gettingstarted_shard2_replica2 baseURL=http://127.0.1.1:8983/solr
+87313 [qtp1867134498-14] INFO  org.apache.solr.cloud.ZkController  – I am the leader, no recovery necessary
+87313 [qtp1867134498-14] INFO  org.apache.solr.cloud.ZkController  – publishing core=gettingstarted_shard2_replica2 state=active collection=gettingstarted
+87315 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node3",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"recovering",
+  "core":"gettingstarted_shard1_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+87336 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+87339 [qtp1867134498-18] INFO  org.apache.solr.cloud.ZkController  – We are http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/ and leader is http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/
+87339 [qtp1867134498-18] INFO  org.apache.solr.cloud.ZkController  – No LogReplay needed for core=gettingstarted_shard1_replica2 baseURL=http://127.0.1.1:8983/solr
+87339 [qtp1867134498-18] INFO  org.apache.solr.cloud.ZkController  – I am the leader, no recovery necessary
+87340 [qtp1867134498-18] INFO  org.apache.solr.cloud.ZkController  – publishing core=gettingstarted_shard1_replica2 state=active collection=gettingstarted
+87471 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"active",
+  "core":"gettingstarted_shard2_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+87479 [qtp1867134498-19] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – Going to wait for coreNodeName: core_node4, state: recovering, checkLive: true, onlyIfLeader: true, onlyIfLeaderActive: true
+87514 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+87515 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"active",
+  "core":"gettingstarted_shard1_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+87559 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node4",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"recovering",
+  "core":"gettingstarted_shard2_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+87602 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+87671 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+87890 [qtp1867134498-19] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – Will wait a max of 183 seconds to see gettingstarted_shard2_replica2 (shard2 of gettingstarted) have state: recovering
+87891 [qtp1867134498-19] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – In WaitForState(recovering): collection=gettingstarted, shard=shard2, thisCore=gettingstarted_shard2_replica2, leaderDoesNotNeedRecovery=false, isLeader? true, live=true, checkLive=true, currentState=recovering, localState=active, nodeName=127.0.1.1:7574_solr, coreNodeName=core_node4, onlyIfActiveCheckResult=false, nodeProps: core_node4:{"state":"recovering","core":"gettingstarted_shard2_replica1","node_name":"127.0.1.1:7574_solr","base_url":"http://127.0.1.1:7574/solr"}
+87892 [qtp1867134498-19] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – Waited coreNodeName: core_node4, state: recovering, checkLive: true, onlyIfLeader: true for: 0 seconds.
+87892 [qtp1867134498-19] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={coreNodeName=core_node4&onlyIfLeaderActive=true&state=recovering&nodeName=127.0.1.1:7574_solr&action=PREPRECOVERY&checkLive=true&core=gettingstarted_shard2_replica2&wt=javabin&onlyIfLeader=true&version=2} status=0 QTime=414 
+87900 [qtp1867134498-18] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={numShards=2&shard=shard1&collection.configName=default&name=gettingstarted_shard1_replica2&action=CREATE&collection=gettingstarted&wt=javabin&qt=/admin/cores&version=2} status=0 QTime=8579 
+87902 [qtp1867134498-14] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={numShards=2&shard=shard2&collection.configName=default&name=gettingstarted_shard2_replica2&action=CREATE&collection=gettingstarted&wt=javabin&qt=/admin/cores&version=2} status=0 QTime=8582 
+87902 [OverseerThreadFactory-4-thread-1] INFO  org.apache.solr.cloud.OverseerCollectionProcessor  – Finished create command on all shards for collection: gettingstarted
+87957 [OverseerThreadFactory-4-thread-1] INFO  org.apache.solr.cloud.OverseerCollectionProcessor  – Overseer Collection Processor: Message id:/overseer/collection-queue-work/qn-0000000000 complete, response:{success={null={responseHeader={status=0,QTime=7584},core=gettingstarted_shard1_replica1},null={responseHeader={status=0,QTime=7727},core=gettingstarted_shard2_replica1},null={responseHeader={status=0,QTime=8579},core=gettingstarted_shard1_replica2},null={responseHeader={status=0,QTime=8582},core=gettingstarted_shard2_replica2}}}
+88049 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/collection-queue-work/qnr-0000000000 state: SyncConnected type NodeDataChanged
+88069 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/collection-queue-work state: SyncConnected type NodeChildrenChanged
+88106 [qtp1867134498-17] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/collections params={numShards=2&indent=2&maxShardsPerNode=2&collection.configName=default&name=gettingstarted&replicationFactor=2&action=CREATE&wt=json} status=0 QTime=9322 
+88312 [qtp1867134498-20] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – In WaitForState(recovering): collection=gettingstarted, shard=shard1, thisCore=gettingstarted_shard1_replica2, leaderDoesNotNeedRecovery=false, isLeader? true, live=true, checkLive=true, currentState=recovering, localState=active, nodeName=127.0.1.1:7574_solr, coreNodeName=core_node3, onlyIfActiveCheckResult=false, nodeProps: core_node3:{"state":"recovering","core":"gettingstarted_shard1_replica1","node_name":"127.0.1.1:7574_solr","base_url":"http://127.0.1.1:7574/solr"}
+88312 [qtp1867134498-20] INFO  org.apache.solr.handler.admin.CoreAdminHandler  – Waited coreNodeName: core_node3, state: recovering, checkLive: true, onlyIfLeader: true for: 1 seconds.
+88312 [qtp1867134498-20] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={coreNodeName=core_node3&onlyIfLeaderActive=true&state=recovering&nodeName=127.0.1.1:7574_solr&action=PREPRECOVERY&checkLive=true&core=gettingstarted_shard1_replica2&wt=javabin&onlyIfLeader=true&version=2} status=0 QTime=1038 
+89904 [qtp1867134498-21] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+89905 [qtp1867134498-16] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard2_replica2] webapp=/solr path=/get params={getVersions=100&distrib=false&wt=javabin&qt=/get&version=2} status=0 QTime=1 
+89905 [qtp1867134498-21] INFO  org.apache.solr.update.UpdateHandler  – No uncommitted changes. Skipping IW.commit.
+89909 [qtp1867134498-21] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+89909 [qtp1867134498-21] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [gettingstarted_shard2_replica2] webapp=/solr path=/update params={waitSearcher=true&openSearcher=false&commit=true&wt=javabin&commit_end_point=true&version=2&softCommit=false} {commit=} 0 6
+89917 [qtp1867134498-16] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard2_replica2] webapp=/solr path=/replication params={command=indexversion&qt=/replication&wt=javabin&version=2} status=0 QTime=0 
+89949 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+89952 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node4",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"active",
+  "core":"gettingstarted_shard2_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+90064 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+90319 [qtp1867134498-16] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard1_replica2] webapp=/solr path=/get params={getVersions=100&distrib=false&wt=javabin&qt=/get&version=2} status=0 QTime=0 
+90322 [qtp1867134498-22] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+90323 [qtp1867134498-22] INFO  org.apache.solr.update.UpdateHandler  – No uncommitted changes. Skipping IW.commit.
+90324 [qtp1867134498-22] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+90324 [qtp1867134498-22] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [gettingstarted_shard1_replica2] webapp=/solr path=/update params={waitSearcher=true&openSearcher=false&commit=true&wt=javabin&commit_end_point=true&version=2&softCommit=false} {commit=} 0 2
+90330 [qtp1867134498-16] INFO  org.apache.solr.core.SolrCore  – [gettingstarted_shard1_replica2] webapp=/solr path=/replication params={command=indexversion&qt=/replication&wt=javabin&version=2} status=0 QTime=0 
+90360 [zkCallback-2-thread-1] INFO  org.apache.solr.cloud.DistributedQueue  – LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+90361 [OverseerStateUpdate-93152538847019008-127.0.1.1:8983_solr-n_0000000000] INFO  org.apache.solr.cloud.Overseer  – Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node3",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"active",
+  "core":"gettingstarted_shard1_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+90527 [zkCallback-2-thread-1] INFO  org.apache.solr.common.cloud.ZkStateReader  – A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+183310 [qtp1867134498-23] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1421395120184&wt=json} status=0 QTime=1 
+183758 [qtp1867134498-16] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={_=1421395120396&wt=json} status=0 QTime=270 
