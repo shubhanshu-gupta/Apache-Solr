@@ -62,6 +62,7 @@
        1.5: omitNorms defaults to true for primitive field types 
             (int, float, boolean, string...)
      -->
+<dynamicField name="*_name"  type="text_general"   multiValued="false" indexed="true"  stored="true" />
 
 
    <!-- Valid attributes for fields:

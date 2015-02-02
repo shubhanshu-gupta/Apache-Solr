@@ -1,0 +1,1449 @@
+INFO  - 2015-01-21 19:09:48.697; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2015-01-21 19:09:48.722; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /home/shubhanshu/solr/solr-4.10.3/node2/contexts at interval 0
+INFO  - 2015-01-21 19:09:48.743; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /home/shubhanshu/solr/solr-4.10.3/node2/contexts/solr-jetty-context.xml
+INFO  - 2015-01-21 19:09:50.271; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2015-01-21 19:09:50.348; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2015-01-21 19:09:50.369; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2015-01-21 19:09:50.370; org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: /home/shubhanshu/solr/solr-4.10.3/node2/solr
+INFO  - 2015-01-21 19:09:50.371; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/shubhanshu/solr/solr-4.10.3/node2/solr/'
+INFO  - 2015-01-21 19:09:50.503; org.apache.solr.core.ConfigSolr; Loading container configuration from /home/shubhanshu/solr/solr-4.10.3/node2/solr/solr.xml
+INFO  - 2015-01-21 19:09:50.599; org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: /home/shubhanshu/solr/solr-4.10.3/node2/solr
+INFO  - 2015-01-21 19:09:50.608; org.apache.solr.core.CoreContainer; New CoreContainer 327582951
+INFO  - 2015-01-21 19:09:50.608; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=/home/shubhanshu/solr/solr-4.10.3/node2/solr/]
+INFO  - 2015-01-21 19:09:50.626; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2015-01-21 19:09:50.626; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2015-01-21 19:09:50.632; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2015-01-21 19:09:50.632; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2015-01-21 19:09:50.635; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2015-01-21 19:09:50.635; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2015-01-21 19:09:50.635; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2015-01-21 19:09:50.635; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2015-01-21 19:09:50.635; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2015-01-21 19:09:50.758; org.apache.solr.update.UpdateShardHandler; Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
+INFO  - 2015-01-21 19:09:50.760; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2015-01-21 19:09:50.761; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2015-01-21 19:09:50.762; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2015-01-21 19:09:50.762; org.apache.solr.core.ZkContainer; Zookeeper client=localhost:9983
+INFO  - 2015-01-21 19:09:50.800; org.apache.solr.common.cloud.ConnectionManager; Waiting for client to connect to ZooKeeper
+INFO  - 2015-01-21 19:09:50.925; org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@37af5cd6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+INFO  - 2015-01-21 19:09:50.926; org.apache.solr.common.cloud.ConnectionManager; Client is connected to ZooKeeper
+INFO  - 2015-01-21 19:09:51.158; org.apache.solr.cloud.ZkController; Register node as live in ZooKeeper:/live_nodes/127.0.1.1:7574_solr
+INFO  - 2015-01-21 19:09:51.191; org.apache.solr.common.cloud.SolrZkClient; makePath: /live_nodes/127.0.1.1:7574_solr
+INFO  - 2015-01-21 19:09:51.239; org.apache.solr.cloud.Overseer; Overseer (id=null) closing
+INFO  - 2015-01-21 19:09:51.306; org.apache.solr.cloud.OverseerElectionContext; I am going to be the leader 127.0.1.1:7574_solr
+INFO  - 2015-01-21 19:09:51.313; org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer_elect/leader
+INFO  - 2015-01-21 19:09:51.349; org.apache.solr.cloud.Overseer; Overseer (id=93183499219107841-127.0.1.1:7574_solr-n_0000000026) starting
+INFO  - 2015-01-21 19:09:51.665; org.apache.solr.cloud.OverseerAutoReplicaFailoverThread; Starting OverseerAutoReplicaFailoverThread autoReplicaFailoverWorkLoopDelay=10000 autoReplicaFailoverWaitAfterExpiration=30000 autoReplicaFailoverBadNodeExpiration=60000
+INFO  - 2015-01-21 19:09:51.708; org.apache.solr.cloud.OverseerCollectionProcessor; Process current queue of collection creations
+INFO  - 2015-01-21 19:09:51.709; org.apache.solr.common.cloud.ZkStateReader; Updating cluster state from ZooKeeper... 
+INFO  - 2015-01-21 19:09:51.731; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Starting to work on the main queue
+INFO  - 2015-01-21 19:09:51.736; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/elevate.xml
+INFO  - 2015-01-21 19:09:51.737; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=null message={
+  "operation":"state",
+  "state":"down",
+  "base_url":"http://127.0.1.1:8983/solr",
+  "core":"collection1",
+  "roles":null,
+  "node_name":"127.0.1.1:8983_solr",
+  "shard":null,
+  "collection":"collection1",
+  "core_node_name":"core_node1"}
+INFO  - 2015-01-21 19:09:51.738; org.apache.solr.cloud.Overseer$ClusterStateUpdater; shard=shard1 is already registered
+INFO  - 2015-01-21 19:09:51.864; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/schema.xml
+INFO  - 2015-01-21 19:09:51.907; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:09:51.940; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+INFO  - 2015-01-21 19:09:52.001; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/protwords.txt
+INFO  - 2015-01-21 19:09:52.118; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=null message={
+  "operation":"state",
+  "state":"down",
+  "base_url":"http://127.0.1.1:8983/solr",
+  "core":"gettingstarted_shard1_replica2",
+  "roles":null,
+  "node_name":"127.0.1.1:8983_solr",
+  "shard":null,
+  "collection":"gettingstarted",
+  "core_node_name":"core_node1"}
+INFO  - 2015-01-21 19:09:52.118; org.apache.solr.cloud.Overseer$ClusterStateUpdater; shard=shard1 is already registered
+INFO  - 2015-01-21 19:09:52.172; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_hy.txt
+INFO  - 2015-01-21 19:09:52.202; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:09:52.205; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=null message={
+  "operation":"state",
+  "state":"down",
+  "base_url":"http://127.0.1.1:8983/solr",
+  "core":"gettingstarted_shard2_replica2",
+  "roles":null,
+  "node_name":"127.0.1.1:8983_solr",
+  "shard":null,
+  "collection":"gettingstarted",
+  "core_node_name":"core_node2"}
+INFO  - 2015-01-21 19:09:52.206; org.apache.solr.cloud.Overseer$ClusterStateUpdater; shard=shard2 is already registered
+INFO  - 2015-01-21 19:09:52.259; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_no.txt
+INFO  - 2015-01-21 19:09:52.369; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_ro.txt
+INFO  - 2015-01-21 19:09:52.475; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+INFO  - 2015-01-21 19:09:52.478; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_bg.txt
+INFO  - 2015-01-21 19:09:52.614; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/userdict_ja.txt
+INFO  - 2015-01-21 19:09:52.653; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/contractions_ca.txt
+INFO  - 2015-01-21 19:09:52.694; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_id.txt
+INFO  - 2015-01-21 19:09:52.770; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_fa.txt
+INFO  - 2015-01-21 19:09:52.870; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_tr.txt
+INFO  - 2015-01-21 19:09:52.909; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/contractions_fr.txt
+INFO  - 2015-01-21 19:09:52.949; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_th.txt
+INFO  - 2015-01-21 19:09:53.033; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/hyphenations_ga.txt
+INFO  - 2015-01-21 19:09:53.076; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/contractions_it.txt
+INFO  - 2015-01-21 19:09:53.116; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/contractions_ga.txt
+INFO  - 2015-01-21 19:09:53.152; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_fr.txt
+INFO  - 2015-01-21 19:09:53.214; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_es.txt
+INFO  - 2015-01-21 19:09:53.293; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stoptags_ja.txt
+INFO  - 2015-01-21 19:09:53.371; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_sv.txt
+INFO  - 2015-01-21 19:09:53.449; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_ca.txt
+INFO  - 2015-01-21 19:09:53.526; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_lv.txt
+INFO  - 2015-01-21 19:09:53.558; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_el.txt
+INFO  - 2015-01-21 19:09:53.601; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_cz.txt
+INFO  - 2015-01-21 19:09:53.695; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_nl.txt
+INFO  - 2015-01-21 19:09:53.815; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_fi.txt
+INFO  - 2015-01-21 19:09:53.916; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_da.txt
+INFO  - 2015-01-21 19:09:54.002; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_ckb.txt
+INFO  - 2015-01-21 19:09:54.070; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_en.txt
+INFO  - 2015-01-21 19:09:54.218; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_eu.txt
+INFO  - 2015-01-21 19:09:54.303; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_de.txt
+INFO  - 2015-01-21 19:09:54.441; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_gl.txt
+INFO  - 2015-01-21 19:09:54.556; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_hi.txt
+INFO  - 2015-01-21 19:09:54.667; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stemdict_nl.txt
+INFO  - 2015-01-21 19:09:54.782; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_ga.txt
+INFO  - 2015-01-21 19:09:54.892; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_ja.txt
+INFO  - 2015-01-21 19:09:54.949; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_ar.txt
+INFO  - 2015-01-21 19:09:55.056; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_pt.txt
+INFO  - 2015-01-21 19:09:55.198; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_ru.txt
+INFO  - 2015-01-21 19:09:55.377; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_hu.txt
+INFO  - 2015-01-21 19:09:55.481; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/lang/stopwords_it.txt
+INFO  - 2015-01-21 19:09:55.589; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/solrconfig.xml
+INFO  - 2015-01-21 19:09:55.669; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/admin-extra.menu-bottom.html
+INFO  - 2015-01-21 19:09:55.733; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/_rest_managed.json
+INFO  - 2015-01-21 19:09:55.790; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/_schema_analysis_stopwords_english.json
+INFO  - 2015-01-21 19:09:55.883; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/spellings.txt
+INFO  - 2015-01-21 19:09:55.982; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/_schema_analysis_synonyms_english.json
+INFO  - 2015-01-21 19:09:56.078; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/mapping-ISOLatin1Accent.txt
+INFO  - 2015-01-21 19:09:56.190; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/admin-extra.menu-top.html
+INFO  - 2015-01-21 19:09:56.256; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/admin-extra.html
+INFO  - 2015-01-21 19:09:56.349; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/stopwords.txt
+INFO  - 2015-01-21 19:09:56.435; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/update-script.js
+INFO  - 2015-01-21 19:09:56.502; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/mapping-FoldToASCII.txt
+INFO  - 2015-01-21 19:09:56.626; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/clustering/carrot2/kmeans-attributes.xml
+INFO  - 2015-01-21 19:09:56.712; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/clustering/carrot2/lingo-attributes.xml
+INFO  - 2015-01-21 19:09:56.879; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/clustering/carrot2/stc-attributes.xml
+INFO  - 2015-01-21 19:09:57.015; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/synonyms.txt
+INFO  - 2015-01-21 19:09:57.070; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/currency.xml
+INFO  - 2015-01-21 19:09:57.193; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/scripts.conf
+INFO  - 2015-01-21 19:09:57.293; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/mime_type_lists.vm
+INFO  - 2015-01-21 19:09:57.405; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/query_group.vm
+INFO  - 2015-01-21 19:09:57.528; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/VM_global_library.vm
+INFO  - 2015-01-21 19:09:57.614; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/facets.vm
+INFO  - 2015-01-21 19:09:57.726; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/error.vm
+INFO  - 2015-01-21 19:09:57.870; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/product_doc.vm
+INFO  - 2015-01-21 19:09:57.993; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/hit.vm
+INFO  - 2015-01-21 19:09:58.102; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/results_list.vm
+INFO  - 2015-01-21 19:09:58.215; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/footer.vm
+INFO  - 2015-01-21 19:09:58.314; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/jquery.autocomplete.js
+INFO  - 2015-01-21 19:09:58.459; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/cluster_results.vm
+INFO  - 2015-01-21 19:09:58.570; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/facet_pivot.vm
+INFO  - 2015-01-21 19:09:58.649; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/header.vm
+INFO  - 2015-01-21 19:09:58.705; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/pagination_top.vm
+INFO  - 2015-01-21 19:09:58.857; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/join_doc.vm
+INFO  - 2015-01-21 19:09:58.904; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/pagination_bottom.vm
+INFO  - 2015-01-21 19:09:59.025; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/query_form.vm
+INFO  - 2015-01-21 19:09:59.104; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/head.vm
+INFO  - 2015-01-21 19:09:59.181; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/did_you_mean.vm
+INFO  - 2015-01-21 19:09:59.239; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/debug.vm
+INFO  - 2015-01-21 19:09:59.348; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/hit_plain.vm
+INFO  - 2015-01-21 19:09:59.403; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/layout.vm
+INFO  - 2015-01-21 19:09:59.653; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/tabs.vm
+INFO  - 2015-01-21 19:09:59.794; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/facet_ranges.vm
+INFO  - 2015-01-21 19:09:59.896; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/hit_grouped.vm
+INFO  - 2015-01-21 19:10:00.004; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/README.txt
+INFO  - 2015-01-21 19:10:00.170; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/richtext_doc.vm
+INFO  - 2015-01-21 19:10:00.268; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/query_spatial.vm
+INFO  - 2015-01-21 19:10:00.426; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/suggest.vm
+INFO  - 2015-01-21 19:10:00.530; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/query.vm
+INFO  - 2015-01-21 19:10:00.586; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/facet_fields.vm
+INFO  - 2015-01-21 19:10:00.685; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/browse.vm
+INFO  - 2015-01-21 19:10:00.849; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/cluster.vm
+INFO  - 2015-01-21 19:10:00.913; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/main.css
+INFO  - 2015-01-21 19:10:01.082; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/jquery.autocomplete.css
+INFO  - 2015-01-21 19:10:01.193; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/velocity/facet_queries.vm
+INFO  - 2015-01-21 19:10:01.301; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/xslt/example.xsl
+INFO  - 2015-01-21 19:10:01.371; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/xslt/luke.xsl
+INFO  - 2015-01-21 19:10:01.547; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/xslt/example_atom.xsl
+INFO  - 2015-01-21 19:10:01.685; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/xslt/example_rss.xsl
+INFO  - 2015-01-21 19:10:01.801; org.apache.solr.common.cloud.SolrZkClient; makePath: /configs/myconf/xslt/updateXml.xsl
+INFO  - 2015-01-21 19:10:01.937; org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath /home/shubhanshu/solr/solr-4.10.3/node2/solr
+INFO  - 2015-01-21 19:10:01.968; org.apache.solr.core.CorePropertiesLocator; Found core gettingstarted_shard2_replica1 in /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/
+INFO  - 2015-01-21 19:10:02.001; org.apache.solr.core.CorePropertiesLocator; Found core collection1 in /home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/
+INFO  - 2015-01-21 19:10:02.014; org.apache.solr.core.CorePropertiesLocator; Found core gettingstarted_shard1_replica1 in /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/
+INFO  - 2015-01-21 19:10:02.020; org.apache.solr.core.CorePropertiesLocator; Found 3 core definitions
+INFO  - 2015-01-21 19:10:02.042; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica1 state=down collection=gettingstarted
+INFO  - 2015-01-21 19:10:02.043; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica1 state=down collection=gettingstarted
+INFO  - 2015-01-21 19:10:02.043; org.apache.solr.cloud.ZkController; publishing core=collection1 state=down collection=collection1
+INFO  - 2015-01-21 19:10:02.045; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2015-01-21 19:10:02.148; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:02.149; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for gettingstarted_shard2_replica1
+INFO  - 2015-01-21 19:10:02.149; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for gettingstarted_shard1_replica1
+INFO  - 2015-01-21 19:10:02.149; org.apache.solr.cloud.ZkController; Check for collection zkNode:gettingstarted
+INFO  - 2015-01-21 19:10:02.149; org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2015-01-21 19:10:02.149; org.apache.solr.cloud.ZkController; Check for collection zkNode:gettingstarted
+INFO  - 2015-01-21 19:10:02.150; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for collection1
+INFO  - 2015-01-21 19:10:02.151; org.apache.solr.cloud.ZkController; Check for collection zkNode:collection1
+INFO  - 2015-01-21 19:10:02.151; org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2015-01-21 19:10:02.153; org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/gettingstarted
+INFO  - 2015-01-21 19:10:02.153; org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2015-01-21 19:10:02.154; org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/collection1
+INFO  - 2015-01-21 19:10:02.153; org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2015-01-21 19:10:02.155; org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/gettingstarted
+INFO  - 2015-01-21 19:10:02.157; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node4",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard2_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-21 19:10:02.158; org.apache.solr.common.cloud.ZkStateReader; path=/collections/gettingstarted configName=default specified config exists in ZooKeeper
+INFO  - 2015-01-21 19:10:02.159; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/'
+INFO  - 2015-01-21 19:10:02.190; org.apache.solr.common.cloud.ZkStateReader; path=/collections/collection1 configName=myconf specified config exists in ZooKeeper
+INFO  - 2015-01-21 19:10:02.190; org.apache.solr.common.cloud.ZkStateReader; path=/collections/gettingstarted configName=default specified config exists in ZooKeeper
+INFO  - 2015-01-21 19:10:02.190; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/'
+INFO  - 2015-01-21 19:10:02.191; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/'
+INFO  - 2015-01-21 19:10:02.335; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2015-01-21 19:10:02.337; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:02.344; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2015-01-21 19:10:02.364; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2015-01-21 19:10:02.462; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node3",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard1_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-21 19:10:02.470; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
+INFO  - 2015-01-21 19:10:02.471; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
+INFO  - 2015-01-21 19:10:02.470; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
+INFO  - 2015-01-21 19:10:02.472; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.471; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.473; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.472; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.473; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+INFO  - 2015-01-21 19:10:02.473; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.473; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2015-01-21 19:10:02.473; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.474; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.474; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+INFO  - 2015-01-21 19:10:02.474; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.474; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+INFO  - 2015-01-21 19:10:02.475; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2015-01-21 19:10:02.474; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2015-01-21 19:10:02.475; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
+INFO  - 2015-01-21 19:10:02.475; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2015-01-21 19:10:02.475; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/icu4j-53.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.475; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.476; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-scratchpad-3.10.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.476; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.476; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.476; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.476; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+INFO  - 2015-01-21 19:10:02.476; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.477; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-core-1.5.jar' to classloader
+INFO  - 2015-01-21 19:10:02.477; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2015-01-21 19:10:02.477; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.477; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2015-01-21 19:10:02.477; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.477; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
+INFO  - 2015-01-21 19:10:02.478; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
+INFO  - 2015-01-21 19:10:02.478; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
+INFO  - 2015-01-21 19:10:02.478; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.478; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/icu4j-53.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.478; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
+INFO  - 2015-01-21 19:10:02.478; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/icu4j-53.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.479; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-3.10.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.479; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-scratchpad-3.10.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.479; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
+INFO  - 2015-01-21 19:10:02.479; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-scratchpad-3.10.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.479; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-ooxml-schemas-3.10.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.479; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.480; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.480; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.480; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.480; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+INFO  - 2015-01-21 19:10:02.480; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jhighlight-1.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.480; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+INFO  - 2015-01-21 19:10:02.481; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.481; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-core-1.5.jar' to classloader
+INFO  - 2015-01-21 19:10:02.481; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-ooxml-3.10.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.481; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-core-1.5.jar' to classloader
+INFO  - 2015-01-21 19:10:02.481; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xz-1.4.jar' to classloader
+INFO  - 2015-01-21 19:10:02.481; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.482; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.482; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.482; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - 2015-01-21 19:10:02.482; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.483; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.482; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.483; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.483; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
+INFO  - 2015-01-21 19:10:02.483; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
+INFO  - 2015-01-21 19:10:02.483; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.484; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.484; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
+INFO  - 2015-01-21 19:10:02.484; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
+INFO  - 2015-01-21 19:10:02.484; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-3.10.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.485; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
+INFO  - 2015-01-21 19:10:02.485; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-ooxml-schemas-3.10.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.486; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.486; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.486; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jhighlight-1.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.487; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.487; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-ooxml-3.10.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.488; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xz-1.4.jar' to classloader
+INFO  - 2015-01-21 19:10:02.488; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.484; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-3.10.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.484; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-cell-4.10.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.489; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - 2015-01-21 19:10:02.489; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
+INFO  - 2015-01-21 19:10:02.490; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-ooxml-schemas-3.10.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.490; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.491; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.491; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.491; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.491; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jhighlight-1.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.491; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.491; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+INFO  - 2015-01-21 19:10:02.492; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+INFO  - 2015-01-21 19:10:02.492; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.493; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+INFO  - 2015-01-21 19:10:02.493; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/poi-ooxml-3.10.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.493; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.493; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-cell-4.10.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.494; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2015-01-21 19:10:02.493; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/xz-1.4.jar' to classloader
+INFO  - 2015-01-21 19:10:02.494; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.495; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.495; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.496; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+INFO  - 2015-01-21 19:10:02.496; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.496; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+INFO  - 2015-01-21 19:10:02.497; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+INFO  - 2015-01-21 19:10:02.497; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.496; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - 2015-01-21 19:10:02.498; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-clustering-4.10.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.497; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2015-01-21 19:10:02.498; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.499; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.499; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.499; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.501; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-cell-4.10.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.501; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-clustering-4.10.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.503; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.504; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+INFO  - 2015-01-21 19:10:02.504; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+INFO  - 2015-01-21 19:10:02.505; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+INFO  - 2015-01-21 19:10:02.505; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.506; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2015-01-21 19:10:02.506; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+INFO  - 2015-01-21 19:10:02.506; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.507; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - 2015-01-21 19:10:02.507; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-clustering-4.10.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.508; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - 2015-01-21 19:10:02.508; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - 2015-01-21 19:10:02.508; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - 2015-01-21 19:10:02.508; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - 2015-01-21 19:10:02.509; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - 2015-01-21 19:10:02.510; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-langid-4.10.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.511; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-langid-4.10.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.511; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-langid-4.10.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.535; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:02.535; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.536; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.535; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.536; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.536; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.537; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2015-01-21 19:10:02.536; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.537; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2015-01-21 19:10:02.537; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.538; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2015-01-21 19:10:02.538; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2015-01-21 19:10:02.538; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2015-01-21 19:10:02.538; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-velocity-4.10.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.539; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-velocity-4.10.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.539; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/shubhanshu/solr/solr-4.10.3/dist/solr-velocity-4.10.3.jar' to classloader
+INFO  - 2015-01-21 19:10:02.605; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=1 message={
+  "operation":"state",
+  "numShards":"1",
+  "shard":null,
+  "roles":null,
+  "state":"down",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-21 19:10:02.606; org.apache.solr.cloud.Overseer$ClusterStateUpdater; node=core_node2 is already registered
+INFO  - 2015-01-21 19:10:02.606; org.apache.solr.cloud.Overseer$ClusterStateUpdater; shard=shard1 is already registered
+INFO  - 2015-01-21 19:10:03.039; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:05.746; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:05.849; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard2_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-21 19:10:06.102; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:06.185; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard1_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-21 19:10:06.340; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:06.341; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=1 message={
+  "operation":"state",
+  "numShards":"1",
+  "shard":null,
+  "roles":null,
+  "state":"down",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-21 19:10:06.342; org.apache.solr.cloud.Overseer$ClusterStateUpdater; node=core_node1 is already registered
+INFO  - 2015-01-21 19:10:06.342; org.apache.solr.cloud.Overseer$ClusterStateUpdater; shard=shard1 is already registered
+INFO  - 2015-01-21 19:10:06.585; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:07.012; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2015-01-21 19:10:07.034; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2015-01-21 19:10:07.040; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 4.10.3
+INFO  - 2015-01-21 19:10:07.025; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2015-01-21 19:10:07.045; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 4.10.3
+INFO  - 2015-01-21 19:10:07.046; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 4.10.3
+INFO  - 2015-01-21 19:10:07.423; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2015-01-21 19:10:07.432; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2015-01-21 19:10:07.444; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2015-01-21 19:10:07.461; org.apache.solr.schema.IndexSchema; Reading Solr Schema from /configs/default/schema.xml
+INFO  - 2015-01-21 19:10:07.463; org.apache.solr.schema.IndexSchema; Reading Solr Schema from /configs/default/schema.xml
+INFO  - 2015-01-21 19:10:07.484; org.apache.solr.schema.IndexSchema; Reading Solr Schema from /configs/myconf/schema.xml
+INFO  - 2015-01-21 19:10:07.631; org.apache.solr.schema.IndexSchema; [gettingstarted_shard2_replica1] Schema name=example
+INFO  - 2015-01-21 19:10:07.740; org.apache.solr.schema.IndexSchema; [gettingstarted_shard1_replica1] Schema name=example
+INFO  - 2015-01-21 19:10:07.763; org.apache.solr.schema.IndexSchema; [collection1] Schema name=example
+INFO  - 2015-01-21 19:10:09.646; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2015-01-21 19:10:09.651; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2015-01-21 19:10:09.667; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2015-01-21 19:10:09.676; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+INFO  - 2015-01-21 19:10:09.677; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+INFO  - 2015-01-21 19:10:09.679; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+INFO  - 2015-01-21 19:10:09.680; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+INFO  - 2015-01-21 19:10:09.681; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+INFO  - 2015-01-21 19:10:09.681; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+INFO  - 2015-01-21 19:10:09.865; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-01-21 19:10:09.876; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-01-21 19:10:09.880; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-01-21 19:10:09.885; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-01-21 19:10:09.897; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-01-21 19:10:09.898; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-01-21 19:10:10.545; org.apache.solr.core.CoreContainer; Creating SolrCore 'gettingstarted_shard2_replica1' using configuration from collection gettingstarted
+INFO  - 2015-01-21 19:10:10.594; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using configuration from collection collection1
+INFO  - 2015-01-21 19:10:10.594; org.apache.solr.core.CoreContainer; Creating SolrCore 'gettingstarted_shard1_replica1' using configuration from collection gettingstarted
+INFO  - 2015-01-21 19:10:10.623; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2015-01-21 19:10:10.625; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2015-01-21 19:10:10.623; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2015-01-21 19:10:10.649; org.apache.solr.core.SolrCore; [gettingstarted_shard1_replica1] Opening new SolrCore at /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/, dataDir=/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/data/
+INFO  - 2015-01-21 19:10:10.649; org.apache.solr.core.SolrCore; [gettingstarted_shard2_replica1] Opening new SolrCore at /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/, dataDir=/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/data/
+INFO  - 2015-01-21 19:10:10.649; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at /home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/, dataDir=/home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/data/
+INFO  - 2015-01-21 19:10:10.652; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@3af4aa7a
+INFO  - 2015-01-21 19:10:10.653; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@3af4aa7a
+INFO  - 2015-01-21 19:10:10.654; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@3af4aa7a
+INFO  - 2015-01-21 19:10:10.721; org.apache.solr.core.SolrCore; [gettingstarted_shard1_replica1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2015-01-21 19:10:10.721; org.apache.solr.core.SolrCore; [gettingstarted_shard1_replica1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2015-01-21 19:10:10.722; org.apache.solr.core.SolrCore; [gettingstarted_shard2_replica1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2015-01-21 19:10:10.722; org.apache.solr.core.SolrCore; [gettingstarted_shard2_replica1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2015-01-21 19:10:10.723; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2015-01-21 19:10:10.723; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2015-01-21 19:10:10.755; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/data
+INFO  - 2015-01-21 19:10:10.758; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/data/index/
+INFO  - 2015-01-21 19:10:10.758; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/data/index
+INFO  - 2015-01-21 19:10:10.760; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/data
+INFO  - 2015-01-21 19:10:10.763; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/data/index/
+INFO  - 2015-01-21 19:10:10.763; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/data/index
+INFO  - 2015-01-21 19:10:10.762; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/data
+INFO  - 2015-01-21 19:10:10.765; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/data/index/
+INFO  - 2015-01-21 19:10:10.766; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/data/index
+INFO  - 2015-01-21 19:10:10.806; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2015-01-21 19:10:10.806; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2015-01-21 19:10:10.807; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2015-01-21 19:10:10.811; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2015-01-21 19:10:10.811; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2015-01-21 19:10:10.812; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2015-01-21 19:10:10.811; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2015-01-21 19:10:10.812; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2015-01-21 19:10:10.813; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2015-01-21 19:10:10.821; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2015-01-21 19:10:10.829; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2015-01-21 19:10:10.838; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2015-01-21 19:10:10.838; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2015-01-21 19:10:10.847; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2015-01-21 19:10:10.848; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2015-01-21 19:10:11.197; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2015-01-21 19:10:11.197; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2015-01-21 19:10:11.203; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2015-01-21 19:10:11.217; org.apache.solr.core.RequestHandlers; created /update: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.217; org.apache.solr.core.RequestHandlers; created /update: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.220; org.apache.solr.core.RequestHandlers; created /update/json: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.220; org.apache.solr.core.RequestHandlers; created /update/json: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.221; org.apache.solr.core.RequestHandlers; created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.222; org.apache.solr.core.RequestHandlers; created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.223; org.apache.solr.core.RequestHandlers; created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.223; org.apache.solr.core.RequestHandlers; created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.224; org.apache.solr.core.RequestHandlers; created /update: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.231; org.apache.solr.core.RequestHandlers; created /update/json: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.232; org.apache.solr.core.RequestHandlers; created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.234; org.apache.solr.core.RequestHandlers; created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.240; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.241; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.250; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.252; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.252; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.254; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2015-01-21 19:10:11.254; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.255; org.apache.solr.core.RequestHandlers; created /export: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.256; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2015-01-21 19:10:11.256; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.257; org.apache.solr.core.RequestHandlers; created /export: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.258; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+WARN  - 2015-01-21 19:10:11.265; org.apache.solr.core.RequestHandlers; Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.265; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.266; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2015-01-21 19:10:11.267; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2015-01-21 19:10:11.267; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2015-01-21 19:10:11.268; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2015-01-21 19:10:11.268; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+WARN  - 2015-01-21 19:10:11.271; org.apache.solr.core.RequestHandlers; Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.271; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.271; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2015-01-21 19:10:11.272; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2015-01-21 19:10:11.272; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2015-01-21 19:10:11.273; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2015-01-21 19:10:11.273; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2015-01-21 19:10:11.273; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2015-01-21 19:10:11.276; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2015-01-21 19:10:11.277; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2015-01-21 19:10:11.279; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2015-01-21 19:10:11.280; org.apache.solr.core.RequestHandlers; created /export: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.282; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+WARN  - 2015-01-21 19:10:11.283; org.apache.solr.core.RequestHandlers; Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.283; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2015-01-21 19:10:11.283; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2015-01-21 19:10:11.284; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2015-01-21 19:10:11.284; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2015-01-21 19:10:11.285; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2015-01-21 19:10:11.285; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2015-01-21 19:10:11.286; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2015-01-21 19:10:11.286; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2015-01-21 19:10:11.295; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2015-01-21 19:10:11.296; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2015-01-21 19:10:11.297; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2015-01-21 19:10:11.300; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2015-01-21 19:10:11.301; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2015-01-21 19:10:11.301; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2015-01-21 19:10:11.305; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2015-01-21 19:10:11.321; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2015-01-21 19:10:11.321; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.321; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.322; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.322; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.322; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.322; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2015-01-21 19:10:11.322; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.323; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.323; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.324; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2015-01-21 19:10:11.322; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.324; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.325; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.325; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.325; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.326; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.326; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.326; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.327; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.330; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.331; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.331; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.331; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.332; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.332; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.333; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2015-01-21 19:10:11.355; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.360; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.360; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.363; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.363; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.365; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.366; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.367; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.368; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.369; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.369; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.371; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.371; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.373; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.375; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-01-21 19:10:11.411; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2015-01-21 19:10:11.411; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2015-01-21 19:10:11.412; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2015-01-21 19:10:11.413; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2015-01-21 19:10:11.548; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/data/index lockFactory=NativeFSLockFactory@/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+INFO  - 2015-01-21 19:10:11.548; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/data/index lockFactory=NativeFSLockFactory@/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+INFO  - 2015-01-21 19:10:11.549; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2015-01-21 19:10:11.549; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2015-01-21 19:10:11.557; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@140a2d31[gettingstarted_shard1_replica1] main
+INFO  - 2015-01-21 19:10:11.557; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@140a2d31[gettingstarted_shard2_replica1] main
+INFO  - 2015-01-21 19:10:11.572; org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/gettingstarted
+INFO  - 2015-01-21 19:10:11.572; org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/gettingstarted
+INFO  - 2015-01-21 19:10:11.574; org.apache.solr.common.cloud.ZkStateReader; path=/collections/gettingstarted configName=default specified config exists in ZooKeeper
+INFO  - 2015-01-21 19:10:11.574; org.apache.solr.common.cloud.ZkStateReader; path=/collections/gettingstarted configName=default specified config exists in ZooKeeper
+INFO  - 2015-01-21 19:10:11.574; org.apache.solr.rest.ManagedResourceStorage; Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/default
+INFO  - 2015-01-21 19:10:11.574; org.apache.solr.rest.ManagedResourceStorage; Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/default
+INFO  - 2015-01-21 19:10:11.580; org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Configured ZooKeeperStorageIO with znodeBase: /configs/default
+INFO  - 2015-01-21 19:10:11.580; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {}
+INFO  - 2015-01-21 19:10:11.583; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/default
+INFO  - 2015-01-21 19:10:11.581; org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Configured ZooKeeperStorageIO with znodeBase: /configs/default
+INFO  - 2015-01-21 19:10:11.584; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {}
+INFO  - 2015-01-21 19:10:11.584; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/default
+INFO  - 2015-01-21 19:10:11.585; org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 34 bytes from znode /configs/default/_rest_managed.json
+INFO  - 2015-01-21 19:10:11.585; org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 34 bytes from znode /configs/default/_rest_managed.json
+INFO  - 2015-01-21 19:10:11.586; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/default
+INFO  - 2015-01-21 19:10:11.586; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/default
+INFO  - 2015-01-21 19:10:11.586; org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2015-01-21 19:10:11.586; org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2015-01-21 19:10:11.587; org.apache.solr.rest.RestManager; Initializing 2 registered ManagedResources
+INFO  - 2015-01-21 19:10:11.587; org.apache.solr.rest.RestManager; Initializing 2 registered ManagedResources
+INFO  - 2015-01-21 19:10:11.587; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/default
+INFO  - 2015-01-21 19:10:11.587; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/default
+INFO  - 2015-01-21 19:10:11.588; org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 488 bytes from znode /configs/default/_schema_analysis_stopwords_english.json
+INFO  - 2015-01-21 19:10:11.588; org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 488 bytes from znode /configs/default/_schema_analysis_stopwords_english.json
+INFO  - 2015-01-21 19:10:11.589; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/default
+INFO  - 2015-01-21 19:10:11.589; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/default
+INFO  - 2015-01-21 19:10:11.589; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+INFO  - 2015-01-21 19:10:11.589; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+INFO  - 2015-01-21 19:10:11.590; org.apache.solr.rest.schema.analysis.ManagedWordSetResource; Loaded 35 words for /schema/analysis/stopwords/english
+INFO  - 2015-01-21 19:10:11.590; org.apache.solr.rest.schema.analysis.ManagedWordSetResource; Loaded 35 words for /schema/analysis/stopwords/english
+INFO  - 2015-01-21 19:10:11.590; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/stopwords/english
+INFO  - 2015-01-21 19:10:11.590; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/stopwords/english
+INFO  - 2015-01-21 19:10:11.591; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/default
+INFO  - 2015-01-21 19:10:11.591; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/default
+INFO  - 2015-01-21 19:10:11.593; org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 183 bytes from znode /configs/default/_schema_analysis_synonyms_english.json
+INFO  - 2015-01-21 19:10:11.593; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/default
+INFO  - 2015-01-21 19:10:11.593; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+INFO  - 2015-01-21 19:10:11.594; org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager; Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+INFO  - 2015-01-21 19:10:11.596; org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 183 bytes from znode /configs/default/_schema_analysis_synonyms_english.json
+INFO  - 2015-01-21 19:10:11.597; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/default
+INFO  - 2015-01-21 19:10:11.597; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+INFO  - 2015-01-21 19:10:11.597; org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager; Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+INFO  - 2015-01-21 19:10:11.598; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/synonyms/english
+INFO  - 2015-01-21 19:10:11.598; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/synonyms/english
+INFO  - 2015-01-21 19:10:11.598; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2015-01-21 19:10:11.598; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2015-01-21 19:10:11.608; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2015-01-21 19:10:11.614; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2015-01-21 19:10:11.614; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2015-01-21 19:10:11.618; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2015-01-21 19:10:11.622; org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/gettingstarted
+INFO  - 2015-01-21 19:10:11.623; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2015-01-21 19:10:11.638; org.apache.solr.common.cloud.ZkStateReader; path=/collections/gettingstarted configName=default specified config exists in ZooKeeper
+INFO  - 2015-01-21 19:10:11.641; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2015-01-21 19:10:11.641; org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/gettingstarted
+INFO  - 2015-01-21 19:10:11.643; org.apache.solr.common.cloud.ZkStateReader; path=/collections/gettingstarted configName=default specified config exists in ZooKeeper
+INFO  - 2015-01-21 19:10:11.708; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2015-01-21 19:10:11.709; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@140a2d31[gettingstarted_shard1_replica1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2015-01-21 19:10:11.723; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2015-01-21 19:10:11.738; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@140a2d31[gettingstarted_shard2_replica1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2015-01-21 19:10:11.849; org.apache.solr.core.SolrCore; [gettingstarted_shard1_replica1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=131 
+INFO  - 2015-01-21 19:10:11.849; org.apache.solr.core.SolrCore; [gettingstarted_shard2_replica1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=98 
+INFO  - 2015-01-21 19:10:11.849; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2015-01-21 19:10:11.849; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2015-01-21 19:10:11.849; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2015-01-21 19:10:11.850; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2015-01-21 19:10:11.850; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2015-01-21 19:10:11.850; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2015-01-21 19:10:11.853; org.apache.solr.core.SolrCore; [gettingstarted_shard2_replica1] Registered new searcher Searcher@140a2d31[gettingstarted_shard2_replica1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2015-01-21 19:10:11.857; org.apache.solr.core.CoreContainer; registering core: gettingstarted_shard2_replica1
+INFO  - 2015-01-21 19:10:11.858; org.apache.solr.core.SolrCore; [gettingstarted_shard1_replica1] Registered new searcher Searcher@140a2d31[gettingstarted_shard1_replica1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2015-01-21 19:10:11.861; org.apache.solr.core.CoreContainer; registering core: gettingstarted_shard1_replica1
+INFO  - 2015-01-21 19:10:11.861; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_c,generation=12}
+INFO  - 2015-01-21 19:10:11.865; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 12
+INFO  - 2015-01-21 19:10:12.616; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@518c8a1b[collection1] main
+INFO  - 2015-01-21 19:10:12.617; org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/collection1
+INFO  - 2015-01-21 19:10:12.618; org.apache.solr.common.cloud.ZkStateReader; path=/collections/collection1 configName=myconf specified config exists in ZooKeeper
+INFO  - 2015-01-21 19:10:12.618; org.apache.solr.rest.ManagedResourceStorage; Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/myconf
+INFO  - 2015-01-21 19:10:12.619; org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Configured ZooKeeperStorageIO with znodeBase: /configs/myconf
+INFO  - 2015-01-21 19:10:12.619; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {}
+INFO  - 2015-01-21 19:10:12.619; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/myconf
+INFO  - 2015-01-21 19:10:12.620; org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 34 bytes from znode /configs/myconf/_rest_managed.json
+INFO  - 2015-01-21 19:10:12.621; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/myconf
+INFO  - 2015-01-21 19:10:12.621; org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2015-01-21 19:10:12.621; org.apache.solr.rest.RestManager; Initializing 2 registered ManagedResources
+INFO  - 2015-01-21 19:10:12.622; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/myconf
+INFO  - 2015-01-21 19:10:12.623; org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 488 bytes from znode /configs/myconf/_schema_analysis_stopwords_english.json
+INFO  - 2015-01-21 19:10:12.624; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/myconf
+INFO  - 2015-01-21 19:10:12.624; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+INFO  - 2015-01-21 19:10:12.624; org.apache.solr.rest.schema.analysis.ManagedWordSetResource; Loaded 35 words for /schema/analysis/stopwords/english
+INFO  - 2015-01-21 19:10:12.624; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/stopwords/english
+INFO  - 2015-01-21 19:10:12.625; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/myconf
+INFO  - 2015-01-21 19:10:12.626; org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 183 bytes from znode /configs/myconf/_schema_analysis_synonyms_english.json
+INFO  - 2015-01-21 19:10:12.626; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/myconf
+INFO  - 2015-01-21 19:10:12.626; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+INFO  - 2015-01-21 19:10:12.626; org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager; Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+INFO  - 2015-01-21 19:10:12.627; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/synonyms/english
+INFO  - 2015-01-21 19:10:12.627; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2015-01-21 19:10:12.627; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2015-01-21 19:10:12.628; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2015-01-21 19:10:12.628; org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/collection1
+INFO  - 2015-01-21 19:10:12.629; org.apache.solr.common.cloud.ZkStateReader; path=/collections/collection1 configName=myconf specified config exists in ZooKeeper
+INFO  - 2015-01-21 19:10:12.642; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2015-01-21 19:10:12.643; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@518c8a1b[collection1] main{StandardDirectoryReader(segments_c:37:nrt _b(4.10.3):C2192 _a(4.10.3):C332 _c(4.10.3):C25 _d(4.10.3):C396 _e(4.10.3):C32 _f(4.10.3):C4 _g(4.10.3):C10 _h(4.10.3):C8)}
+INFO  - 2015-01-21 19:10:12.773; org.apache.solr.core.SolrCore; [collection1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=1857 status=0 QTime=129 
+INFO  - 2015-01-21 19:10:13.175; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2015-01-21 19:10:13.176; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2015-01-21 19:10:13.176; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2015-01-21 19:10:13.180; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@518c8a1b[collection1] main{StandardDirectoryReader(segments_c:37:nrt _b(4.10.3):C2192 _a(4.10.3):C332 _c(4.10.3):C25 _d(4.10.3):C396 _e(4.10.3):C32 _f(4.10.3):C4 _g(4.10.3):C10 _h(4.10.3):C8)}
+INFO  - 2015-01-21 19:10:13.185; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2015-01-21 19:10:13.189; org.apache.solr.cloud.ZkController; Register replica - core:gettingstarted_shard2_replica1 address:http://127.0.1.1:7574/solr collection:gettingstarted shard:shard2
+INFO  - 2015-01-21 19:10:13.190; org.apache.solr.cloud.ZkController; Register replica - core:collection1 address:http://127.0.1.1:7574/solr collection:collection1 shard:shard1
+INFO  - 2015-01-21 19:10:13.189; org.apache.solr.cloud.ZkController; Register replica - core:gettingstarted_shard1_replica1 address:http://127.0.1.1:7574/solr collection:gettingstarted shard:shard1
+INFO  - 2015-01-21 19:10:13.214; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/shubhanshu/solr/solr-4.10.3/node2
+INFO  - 2015-01-21 19:10:13.215; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2015-01-21 19:10:13.257; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:13.380; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:7574
+INFO  - 2015-01-21 19:10:13.520; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:13.624; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:13.818; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:14.045; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:14.290; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:14.318; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:14.462; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"active",
+  "core":"gettingstarted_shard2_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-21 19:10:14.480; org.apache.solr.cloud.ZkController; We are http://127.0.1.1:7574/solr/gettingstarted_shard2_replica1/ and leader is http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/
+INFO  - 2015-01-21 19:10:14.480; org.apache.solr.cloud.ZkController; We are http://127.0.1.1:7574/solr/gettingstarted_shard1_replica1/ and leader is http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/
+INFO  - 2015-01-21 19:10:14.481; org.apache.solr.cloud.ZkController; No LogReplay needed for core=gettingstarted_shard2_replica1 baseURL=http://127.0.1.1:7574/solr
+INFO  - 2015-01-21 19:10:14.481; org.apache.solr.cloud.ZkController; No LogReplay needed for core=gettingstarted_shard1_replica1 baseURL=http://127.0.1.1:7574/solr
+INFO  - 2015-01-21 19:10:14.481; org.apache.solr.cloud.ZkController; Core needs to recover:gettingstarted_shard2_replica1
+INFO  - 2015-01-21 19:10:14.481; org.apache.solr.cloud.ZkController; Core needs to recover:gettingstarted_shard1_replica1
+INFO  - 2015-01-21 19:10:14.482; org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2015-01-21 19:10:14.482; org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2015-01-21 19:10:14.553; org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=gettingstarted_shard2_replica1 recoveringAfterStartup=true
+INFO  - 2015-01-21 19:10:14.553; org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=gettingstarted_shard1_replica1 recoveringAfterStartup=true
+INFO  - 2015-01-21 19:10:14.553; org.apache.solr.cloud.RecoveryStrategy; ###### startupVersions=[]
+INFO  - 2015-01-21 19:10:14.554; org.apache.solr.cloud.RecoveryStrategy; ###### startupVersions=[]
+INFO  - 2015-01-21 19:10:14.554; org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard2_replica1 as recovering, leader is http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/ and I am http://127.0.1.1:7574/solr/gettingstarted_shard2_replica1/
+INFO  - 2015-01-21 19:10:14.554; org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard1_replica1 as recovering, leader is http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/ and I am http://127.0.1.1:7574/solr/gettingstarted_shard1_replica1/
+INFO  - 2015-01-21 19:10:14.554; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica1 state=recovering collection=gettingstarted
+INFO  - 2015-01-21 19:10:14.554; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica1 state=recovering collection=gettingstarted
+INFO  - 2015-01-21 19:10:14.579; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:14.618; org.apache.solr.core.SolrCore; [gettingstarted_shard1_replica1] webapp=/solr path=/get params={getVersions=100&distrib=false&wt=javabin&qt=/get&version=2} status=0 QTime=5 
+INFO  - 2015-01-21 19:10:14.619; org.apache.solr.core.SolrCore; [gettingstarted_shard2_replica1] webapp=/solr path=/get params={getVersions=100&distrib=false&wt=javabin&qt=/get&version=2} status=0 QTime=6 
+INFO  - 2015-01-21 19:10:14.618; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:14.619; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"active",
+  "core":"gettingstarted_shard1_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-21 19:10:14.627; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/get params={getVersions=100&distrib=false&wt=javabin&qt=/get&version=2} status=0 QTime=14 
+INFO  - 2015-01-21 19:10:14.632; org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://127.0.1.1:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard1_replica2&nodeName=127.0.1.1%3A7574_solr&coreNodeName=core_node3&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-01-21 19:10:14.646; org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://127.0.1.1:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard2_replica2&nodeName=127.0.1.1%3A7574_solr&coreNodeName=core_node4&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-01-21 19:10:14.653; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr START replicas=[http://127.0.1.1:8983/solr/collection1/] nUpdates=100
+INFO  - 2015-01-21 19:10:14.702; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node3",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"recovering",
+  "core":"gettingstarted_shard1_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-21 19:10:14.756; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:14.758; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node4",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"recovering",
+  "core":"gettingstarted_shard2_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-21 19:10:14.869; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr  Received 95 versions from http://127.0.1.1:8983/solr/collection1/
+INFO  - 2015-01-21 19:10:14.870; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr  Our versions are newer. ourLowThreshold=1490470422317105152 otherHigh=1490470953176530944
+INFO  - 2015-01-21 19:10:14.870; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr DONE. sync succeeded
+INFO  - 2015-01-21 19:10:14.871; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/get params={sync=http://127.0.1.1:8983/solr/collection1/&getVersions=100&distrib=false&wt=javabin&qt=/get&version=2} status=0 QTime=222 
+INFO  - 2015-01-21 19:10:15.001; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:15.031; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:15.218; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:15.246; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:15.310; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=1 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"1",
+  "shard":"shard1",
+  "roles":null,
+  "state":"active",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-21 19:10:15.407; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:15.434; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:15.436; org.apache.solr.cloud.ZkController; We are http://127.0.1.1:7574/solr/collection1/ and leader is http://127.0.1.1:8983/solr/collection1/
+INFO  - 2015-01-21 19:10:15.436; org.apache.solr.cloud.ZkController; No LogReplay needed for core=collection1 baseURL=http://127.0.1.1:7574/solr
+INFO  - 2015-01-21 19:10:15.436; org.apache.solr.cloud.ZkController; Core needs to recover:collection1
+INFO  - 2015-01-21 19:10:15.437; org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2015-01-21 19:10:15.438; org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=collection1 recoveringAfterStartup=true
+INFO  - 2015-01-21 19:10:15.444; org.apache.solr.cloud.RecoveryStrategy; ###### startupVersions=[1490529551431761920, 1490529551430713344, 1490529551428616192, 1490529551427567616, 1490529551426519040, 1490529551425470464, 1490529551423373312, 1490529551148646400, 1490474784023117825, 1490474784023117824, 1490474784022069249, 1490474784022069248, 1490474784021020672, 1490474784019972097, 1490474784019972096, 1490474784018923520, 1490474784016826368, 1490474784008437760, 1490470953177579520, 1490470953176530944, 1490470953175482368, 1490470953169190912, 1490470795404640256, 1490470795402543104, 1490470795383668736, 1490470795365842944, 1490470795348017152, 1490470795330191360, 1490470795306074112, 1490470795289296896, 1490470795272519681, 1490470795272519680, 1490470795271471104, 1490470795270422528, 1490470795221139456, 1490470795220090880, 1490470795172904960, 1490470795152982017, 1490470795152982016, 1490470795151933441, 1490470795151933440, 1490470795150884864, 1490470795149836288, 1490470795148787712, 1490470795147739136, 1490470795146690560, 1490470795145641984, 1490470795144593408, 1490470794949558272, 1490470794918100992, 1490470794914955264, 1490470794761863168, 1490470794720968704, 1490470794587799552, 1490470423052156928, 1490470423035379712, 1490470423019651072, 1490470423004971008, 1490470422989242368, 1490470422973513728, 1490470422954639360, 1490470422938910720, 1490470422923182080, 1490470422888579072, 1490470422859218944, 1490470422831955968, 1490470422800498688, 1490470422781624320, 1490470422741778432, 1490470422725001216, 1490470422469148672, 1490470422446080000, 1490470422416719872, 1490470422390505472, 1490470422367436800, 1490470422343319552, 1490470422317105152, 1490470422286696448, 1490470422272016384, 1490470422229024768, 1490470422212247552, 1490470422197567488, 1490470422183936000, 1490470422164013056, 1490470422135701504, 1490470422108438528, 1490470422081175552, 1490470422053912576, 1490470422025601024, 1490470421999386624, 1490470421964783616, 1490470421934374912, 1490470421905014784, 1490470421875654656, 1490470421849440256]
+INFO  - 2015-01-21 19:10:15.445; org.apache.solr.cloud.RecoveryStrategy; Publishing state of core collection1 as recovering, leader is http://127.0.1.1:8983/solr/collection1/ and I am http://127.0.1.1:7574/solr/collection1/
+INFO  - 2015-01-21 19:10:15.445; org.apache.solr.cloud.ZkController; publishing core=collection1 state=recovering collection=collection1
+INFO  - 2015-01-21 19:10:15.445; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2015-01-21 19:10:15.504; org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://127.0.1.1:8983/solr; WaitForState: action=PREPRECOVERY&core=collection1&nodeName=127.0.1.1%3A7574_solr&coreNodeName=core_node2&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-01-21 19:10:15.518; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=1 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"1",
+  "shard":"shard1",
+  "roles":null,
+  "state":"recovering",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-21 19:10:15.579; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:17.843; org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/ core=gettingstarted_shard2_replica1 - recoveringAfterStartup=true
+INFO  - 2015-01-21 19:10:17.844; org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/ core=gettingstarted_shard1_replica1 - recoveringAfterStartup=true
+INFO  - 2015-01-21 19:10:17.844; org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica1 url=http://127.0.1.1:7574/solr START replicas=[http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/] nUpdates=100
+INFO  - 2015-01-21 19:10:17.846; org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica1 url=http://127.0.1.1:7574/solr START replicas=[http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/] nUpdates=100
+WARN  - 2015-01-21 19:10:17.847; org.apache.solr.update.PeerSync; no frame of reference to tell if we've missed updates
+INFO  - 2015-01-21 19:10:17.847; org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was not successful - trying replication. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-21 19:10:17.848; org.apache.solr.cloud.RecoveryStrategy; Starting Replication Recovery. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-21 19:10:17.849; org.apache.solr.cloud.RecoveryStrategy; Begin buffering updates. core=gettingstarted_shard2_replica1
+WARN  - 2015-01-21 19:10:17.849; org.apache.solr.update.PeerSync; no frame of reference to tell if we've missed updates
+INFO  - 2015-01-21 19:10:17.850; org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was not successful - trying replication. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-21 19:10:17.850; org.apache.solr.cloud.RecoveryStrategy; Starting Replication Recovery. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-21 19:10:17.851; org.apache.solr.cloud.RecoveryStrategy; Begin buffering updates. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-21 19:10:17.849; org.apache.solr.update.UpdateLog; Starting to buffer updates. FSUpdateLog{state=ACTIVE, tlog=null}
+INFO  - 2015-01-21 19:10:17.853; org.apache.solr.cloud.RecoveryStrategy; Attempting to replicate from http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-21 19:10:17.852; org.apache.solr.update.UpdateLog; Starting to buffer updates. FSUpdateLog{state=ACTIVE, tlog=null}
+INFO  - 2015-01-21 19:10:17.856; org.apache.solr.cloud.RecoveryStrategy; Attempting to replicate from http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-21 19:10:17.882; org.apache.solr.handler.SnapPuller;  No value set for 'pollInterval'. Timer Task not started.
+INFO  - 2015-01-21 19:10:17.882; org.apache.solr.handler.SnapPuller;  No value set for 'pollInterval'. Timer Task not started.
+INFO  - 2015-01-21 19:10:17.887; org.apache.solr.cloud.RecoveryStrategy; No replay needed. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-21 19:10:17.887; org.apache.solr.cloud.RecoveryStrategy; No replay needed. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-21 19:10:17.888; org.apache.solr.cloud.RecoveryStrategy; Replication Recovery was successful - registering as Active. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-21 19:10:17.887; org.apache.solr.cloud.RecoveryStrategy; Replication Recovery was successful - registering as Active. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-21 19:10:17.888; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica1 state=active collection=gettingstarted
+INFO  - 2015-01-21 19:10:17.888; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica1 state=active collection=gettingstarted
+INFO  - 2015-01-21 19:10:17.912; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:17.912; org.apache.solr.cloud.RecoveryStrategy; Finished recovery process. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-21 19:10:17.940; org.apache.solr.cloud.RecoveryStrategy; Finished recovery process. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-21 19:10:17.943; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node4",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"active",
+  "core":"gettingstarted_shard2_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-21 19:10:18.057; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:18.107; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node3",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"active",
+  "core":"gettingstarted_shard1_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-21 19:10:18.163; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:18.190; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:18.530; org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://127.0.1.1:8983/solr/collection1/ core=collection1 - recoveringAfterStartup=true
+INFO  - 2015-01-21 19:10:18.531; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr START replicas=[http://127.0.1.1:8983/solr/collection1/] nUpdates=100
+INFO  - 2015-01-21 19:10:18.541; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr  Received 95 versions from http://127.0.1.1:8983/solr/collection1/
+INFO  - 2015-01-21 19:10:18.542; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr  Our versions are newer. ourLowThreshold=1490470422317105152 otherHigh=1490470953176530944
+INFO  - 2015-01-21 19:10:18.542; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr DONE. sync succeeded
+INFO  - 2015-01-21 19:10:18.545; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2015-01-21 19:10:18.546; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2015-01-21 19:10:18.548; org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2015-01-21 19:10:18.549; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-01-21 19:10:18.549; org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was successful - registering as Active. core=collection1
+INFO  - 2015-01-21 19:10:18.550; org.apache.solr.cloud.ZkController; publishing core=collection1 state=active collection=collection1
+INFO  - 2015-01-21 19:10:18.550; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2015-01-21 19:10:18.585; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:18.593; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=1 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"1",
+  "shard":"shard1",
+  "roles":null,
+  "state":"active",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-21 19:10:18.834; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-21 19:10:26.190; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/collection-queue-work state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-21 19:10:26.215; org.apache.solr.cloud.OverseerCollectionProcessor; Overseer Collection Processor: Get the message id:/overseer/collection-queue-work/qn-0000000012 message:{
+  "operation":"createcollection",
+  "fromApi":"true",
+  "name":"gettingstarted",
+  "replicationFactor":"2",
+  "collection.configName":"default",
+  "numShards":"2",
+  "maxShardsPerNode":"2"}
+WARN  - 2015-01-21 19:10:26.219; org.apache.solr.cloud.OverseerCollectionProcessor; OverseerCollectionProcessor.processMessage : createcollection , {
+  "operation":"createcollection",
+  "fromApi":"true",
+  "name":"gettingstarted",
+  "replicationFactor":"2",
+  "collection.configName":"default",
+  "numShards":"2",
+  "maxShardsPerNode":"2"}
+ERROR - 2015-01-21 19:10:26.221; org.apache.solr.common.SolrException; Collection: gettingstarted operation: createcollection failed:org.apache.solr.common.SolrException: collection already exists: gettingstarted
+	at org.apache.solr.cloud.OverseerCollectionProcessor.createCollection(OverseerCollectionProcessor.java:2081)
+	at org.apache.solr.cloud.OverseerCollectionProcessor.processMessage(OverseerCollectionProcessor.java:551)
+	at org.apache.solr.cloud.OverseerCollectionProcessor$Runner.run(OverseerCollectionProcessor.java:2629)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+INFO  - 2015-01-21 19:10:26.242; org.apache.solr.cloud.OverseerCollectionProcessor$Runner; Overseer Collection Processor: Message id:/overseer/collection-queue-work/qn-0000000012 complete, response:{Operation createcollection caused exception:=org.apache.solr.common.SolrException: collection already exists: gettingstarted,exception={msg=collection already exists: gettingstarted,rspCode=400}}
+INFO  - 2015-01-21 19:10:26.334; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/collection-queue-work state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:40.946; org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@37af5cd6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:Disconnected type:None path:null path:null type:None
+INFO  - 2015-01-22 05:17:41.586; org.apache.solr.common.cloud.ConnectionManager; zkClient has disconnected
+INFO  - 2015-01-22 05:17:41.588; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: null state: Disconnected type None
+INFO  - 2015-01-22 05:17:40.947; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: null state: Disconnected type None
+INFO  - 2015-01-22 05:17:43.810; org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@37af5cd6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:Expired type:None path:null path:null type:None
+INFO  - 2015-01-22 05:17:43.810; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: null state: Expired type None
+INFO  - 2015-01-22 05:17:43.810; org.apache.solr.common.cloud.ConnectionManager; Our previous ZooKeeper session was expired. Attempting to reconnect to recover relationship with ZooKeeper...
+INFO  - 2015-01-22 05:17:43.811; org.apache.solr.cloud.Overseer; Overseer (id=93183499219107841-127.0.1.1:7574_solr-n_0000000026) closing
+INFO  - 2015-01-22 05:17:43.811; org.apache.solr.cloud.OverseerCollectionProcessor; According to ZK I (id=93183499219107841-127.0.1.1:7574_solr-n_0000000026) am no longer a leader.
+INFO  - 2015-01-22 05:17:43.812; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Overseer Loop exiting : 127.0.1.1:7574_solr
+INFO  - 2015-01-22 05:17:44.266; org.apache.solr.common.cloud.DefaultConnectionStrategy; Connection expired - starting a new one...
+INFO  - 2015-01-22 05:17:44.267; org.apache.solr.common.cloud.ConnectionManager; Waiting for client to connect to ZooKeeper
+INFO  - 2015-01-22 05:17:44.522; org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@37af5cd6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+INFO  - 2015-01-22 05:17:44.523; org.apache.solr.common.cloud.ConnectionManager; Client is connected to ZooKeeper
+INFO  - 2015-01-22 05:17:44.523; org.apache.solr.common.cloud.ConnectionManager$1; Connection with ZooKeeper reestablished.
+INFO  - 2015-01-22 05:17:44.524; org.apache.solr.common.cloud.DefaultConnectionStrategy; Reconnected to ZooKeeper
+INFO  - 2015-01-22 05:17:44.524; org.apache.solr.common.cloud.ConnectionManager; Connected:true
+WARN  - 2015-01-22 05:17:44.524; org.apache.solr.cloud.RecoveryStrategy; Stopping recovery for core=collection1 coreNodeName=core_node2
+INFO  - 2015-01-22 05:17:44.524; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: null state: Expired type None
+INFO  - 2015-01-22 05:17:44.524; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica1 state=down collection=gettingstarted
+INFO  - 2015-01-22 05:17:45.034; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica1 state=down collection=gettingstarted
+ERROR - 2015-01-22 05:17:45.245; org.apache.solr.cloud.Overseer$ClusterStateUpdater; could not read the data
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /overseer_elect/leader
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:111)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.solr.common.cloud.SolrZkClient$8.execute(SolrZkClient.java:307)
+	at org.apache.solr.common.cloud.SolrZkClient$8.execute(SolrZkClient.java:304)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:74)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:304)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.checkIfIamStillLeader(Overseer.java:321)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.access$300(Overseer.java:90)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater$1.run(Overseer.java:293)
+INFO  - 2015-01-22 05:17:45.333; org.apache.solr.cloud.ZkController; publishing core=collection1 state=down collection=collection1
+INFO  - 2015-01-22 05:17:45.351; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2015-01-22 05:17:45.991; org.apache.solr.cloud.ElectionContext; canceling election /overseer_elect/election/93183499219107841-127.0.1.1:7574_solr-n_0000000026
+WARN  - 2015-01-22 05:17:46.145; org.apache.solr.cloud.ElectionContext; cancelElection did not find election node to remove /overseer_elect/election/93183499219107841-127.0.1.1:7574_solr-n_0000000026
+INFO  - 2015-01-22 05:17:46.544; org.apache.solr.cloud.OverseerElectionContext; I am going to be the leader 127.0.1.1:7574_solr
+INFO  - 2015-01-22 05:17:46.545; org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer_elect/leader
+INFO  - 2015-01-22 05:17:46.790; org.apache.solr.cloud.Overseer; Overseer (id=93183499219107843-127.0.1.1:7574_solr-n_0000000028) starting
+INFO  - 2015-01-22 05:17:48.156; org.apache.solr.cloud.OverseerAutoReplicaFailoverThread; Starting OverseerAutoReplicaFailoverThread autoReplicaFailoverWorkLoopDelay=10000 autoReplicaFailoverWaitAfterExpiration=30000 autoReplicaFailoverBadNodeExpiration=60000
+INFO  - 2015-01-22 05:17:48.157; org.apache.solr.cloud.OverseerCollectionProcessor; Process current queue of collection creations
+INFO  - 2015-01-22 05:17:48.159; org.apache.solr.common.cloud.ZkStateReader; Updating cluster state from ZooKeeper... 
+INFO  - 2015-01-22 05:17:48.167; org.apache.solr.cloud.ZkController; Register node as live in ZooKeeper:/live_nodes/127.0.1.1:7574_solr
+INFO  - 2015-01-22 05:17:48.168; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Starting to work on the main queue
+INFO  - 2015-01-22 05:17:48.222; org.apache.solr.common.cloud.SolrZkClient; makePath: /live_nodes/127.0.1.1:7574_solr
+INFO  - 2015-01-22 05:17:48.279; org.apache.solr.cloud.ZkController; Register replica - core:gettingstarted_shard2_replica1 address:http://127.0.1.1:7574/solr collection:gettingstarted shard:shard2
+INFO  - 2015-01-22 05:17:48.280; org.apache.solr.cloud.ElectionContext; canceling election /collections/gettingstarted/leader_elect/shard2/election/93183499219107841-core_node4-n_0000000029
+INFO  - 2015-01-22 05:17:48.281; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node4",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard2_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+WARN  - 2015-01-22 05:17:48.333; org.apache.solr.cloud.ElectionContext; cancelElection did not find election node to remove /collections/gettingstarted/leader_elect/shard2/election/93183499219107841-core_node4-n_0000000029
+INFO  - 2015-01-22 05:17:48.500; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:48.677; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-22 05:17:48.960; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard2_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-22 05:17:49.189; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:49.192; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node3",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard1_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-22 05:17:49.524; org.apache.solr.core.SolrCore; [gettingstarted_shard2_replica1] webapp=/solr path=/get params={getVersions=100&distrib=false&wt=javabin&qt=/get&version=2} status=0 QTime=1 
+INFO  - 2015-01-22 05:17:49.578; org.apache.solr.cloud.ZkController; We are http://127.0.1.1:7574/solr/gettingstarted_shard2_replica1/ and leader is http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/
+INFO  - 2015-01-22 05:17:49.578; org.apache.solr.cloud.ZkController; No LogReplay needed for core=gettingstarted_shard2_replica1 baseURL=http://127.0.1.1:7574/solr
+INFO  - 2015-01-22 05:17:49.578; org.apache.solr.cloud.ZkController; Core needs to recover:gettingstarted_shard2_replica1
+INFO  - 2015-01-22 05:17:49.579; org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2015-01-22 05:17:49.579; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard1_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-22 05:17:49.579; org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=gettingstarted_shard2_replica1 recoveringAfterStartup=false
+INFO  - 2015-01-22 05:17:49.580; org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard2_replica1 as recovering, leader is http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/ and I am http://127.0.1.1:7574/solr/gettingstarted_shard2_replica1/
+INFO  - 2015-01-22 05:17:49.580; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica1 state=recovering collection=gettingstarted
+INFO  - 2015-01-22 05:17:49.700; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:49.702; org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://127.0.1.1:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard2_replica2&nodeName=127.0.1.1%3A7574_solr&coreNodeName=core_node4&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-01-22 05:17:49.834; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=1 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"1",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-22 05:17:50.167; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:50.224; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=1 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"1",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-22 05:17:50.578; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-22 05:17:50.987; org.apache.solr.cloud.ZkController; Register replica - core:gettingstarted_shard1_replica1 address:http://127.0.1.1:7574/solr collection:gettingstarted shard:shard1
+INFO  - 2015-01-22 05:17:50.988; org.apache.solr.cloud.ElectionContext; canceling election /collections/gettingstarted/leader_elect/shard1/election/93183499219107841-core_node3-n_0000000038
+WARN  - 2015-01-22 05:17:51.067; org.apache.solr.cloud.ElectionContext; cancelElection did not find election node to remove /collections/gettingstarted/leader_elect/shard1/election/93183499219107841-core_node3-n_0000000038
+INFO  - 2015-01-22 05:17:51.323; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:51.625; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node4",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"recovering",
+  "core":"gettingstarted_shard2_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-22 05:17:51.734; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:51.741; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"active",
+  "core":"gettingstarted_shard2_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-22 05:17:51.743; org.apache.solr.core.SolrCore; [gettingstarted_shard1_replica1] webapp=/solr path=/get params={getVersions=100&distrib=false&wt=javabin&qt=/get&version=2} status=0 QTime=1 
+INFO  - 2015-01-22 05:17:51.911; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:52.056; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:52.344; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-22 05:17:52.345; org.apache.solr.cloud.ZkController; We are http://127.0.1.1:7574/solr/gettingstarted_shard1_replica1/ and leader is http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/
+INFO  - 2015-01-22 05:17:52.345; org.apache.solr.cloud.ZkController; No LogReplay needed for core=gettingstarted_shard1_replica1 baseURL=http://127.0.1.1:7574/solr
+INFO  - 2015-01-22 05:17:52.346; org.apache.solr.cloud.ZkController; Core needs to recover:gettingstarted_shard1_replica1
+INFO  - 2015-01-22 05:17:52.346; org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2015-01-22 05:17:52.347; org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=gettingstarted_shard1_replica1 recoveringAfterStartup=false
+INFO  - 2015-01-22 05:17:52.348; org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard1_replica1 as recovering, leader is http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/ and I am http://127.0.1.1:7574/solr/gettingstarted_shard1_replica1/
+INFO  - 2015-01-22 05:17:52.348; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica1 state=recovering collection=gettingstarted
+INFO  - 2015-01-22 05:17:52.851; org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://127.0.1.1:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard1_replica2&nodeName=127.0.1.1%3A7574_solr&coreNodeName=core_node3&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-01-22 05:17:53.694; org.apache.solr.cloud.ZkController; Register replica - core:collection1 address:http://127.0.1.1:7574/solr collection:collection1 shard:shard1
+INFO  - 2015-01-22 05:17:53.695; org.apache.solr.cloud.ElectionContext; canceling election /collections/collection1/leader_elect/shard1/election/93183499219107841-core_node2-n_0000000036
+WARN  - 2015-01-22 05:17:53.755; org.apache.solr.cloud.ElectionContext; cancelElection did not find election node to remove /collections/collection1/leader_elect/shard1/election/93183499219107841-core_node2-n_0000000036
+INFO  - 2015-01-22 05:17:53.923; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:54.056; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-22 05:17:54.119; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"active",
+  "core":"gettingstarted_shard1_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-22 05:17:54.500; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:54.502; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node3",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"recovering",
+  "core":"gettingstarted_shard1_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-22 05:17:55.141; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:55.234; org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/ core=gettingstarted_shard2_replica1 - recoveringAfterStartup=false
+INFO  - 2015-01-22 05:17:55.234; org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica1 url=http://127.0.1.1:7574/solr START replicas=[http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/] nUpdates=100
+WARN  - 2015-01-22 05:17:55.235; org.apache.solr.update.PeerSync; no frame of reference to tell if we've missed updates
+INFO  - 2015-01-22 05:17:55.235; org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was not successful - trying replication. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-22 05:17:55.235; org.apache.solr.cloud.RecoveryStrategy; Starting Replication Recovery. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-22 05:17:55.235; org.apache.solr.cloud.RecoveryStrategy; Begin buffering updates. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-22 05:17:55.236; org.apache.solr.update.UpdateLog; Starting to buffer updates. FSUpdateLog{state=ACTIVE, tlog=null}
+INFO  - 2015-01-22 05:17:55.236; org.apache.solr.cloud.RecoveryStrategy; Attempting to replicate from http://127.0.1.1:8983/solr/gettingstarted_shard2_replica2/. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-22 05:17:55.479; org.apache.solr.handler.SnapPuller;  No value set for 'pollInterval'. Timer Task not started.
+INFO  - 2015-01-22 05:17:55.484; org.apache.solr.cloud.RecoveryStrategy; No replay needed. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-22 05:17:55.484; org.apache.solr.cloud.RecoveryStrategy; Replication Recovery was successful - registering as Active. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-22 05:17:55.485; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica1 state=active collection=gettingstarted
+INFO  - 2015-01-22 05:17:55.762; org.apache.solr.cloud.RecoveryStrategy; Finished recovery process. core=gettingstarted_shard2_replica1
+INFO  - 2015-01-22 05:17:55.762; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-22 05:17:56.471; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node4",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"active",
+  "core":"gettingstarted_shard2_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-22 05:17:56.947; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/get params={getVersions=100&distrib=false&wt=javabin&qt=/get&version=2} status=0 QTime=2764 
+INFO  - 2015-01-22 05:17:57.011; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:57.034; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr START replicas=[http://127.0.1.1:8983/solr/collection1/] nUpdates=100
+INFO  - 2015-01-22 05:17:57.101; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-22 05:17:57.191; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr  Received 95 versions from http://127.0.1.1:8983/solr/collection1/
+INFO  - 2015-01-22 05:17:57.191; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr  Our versions are newer. ourLowThreshold=1490470422317105152 otherHigh=1490470953176530944
+INFO  - 2015-01-22 05:17:57.191; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr DONE. sync succeeded
+INFO  - 2015-01-22 05:17:57.192; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/get params={sync=http://127.0.1.1:8983/solr/collection1/&getVersions=100&distrib=false&wt=javabin&qt=/get&version=2} status=0 QTime=158 
+INFO  - 2015-01-22 05:17:57.558; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:58.078; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-22 05:17:58.227; org.apache.solr.cloud.ZkController; We are http://127.0.1.1:7574/solr/collection1/ and leader is http://127.0.1.1:8983/solr/collection1/
+INFO  - 2015-01-22 05:17:58.228; org.apache.solr.cloud.ZkController; No LogReplay needed for core=collection1 baseURL=http://127.0.1.1:7574/solr
+INFO  - 2015-01-22 05:17:58.228; org.apache.solr.cloud.ZkController; Core needs to recover:collection1
+INFO  - 2015-01-22 05:17:58.228; org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2015-01-22 05:17:58.229; org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=collection1 recoveringAfterStartup=false
+INFO  - 2015-01-22 05:17:58.232; org.apache.solr.cloud.RecoveryStrategy; Publishing state of core collection1 as recovering, leader is http://127.0.1.1:8983/solr/collection1/ and I am http://127.0.1.1:7574/solr/collection1/
+INFO  - 2015-01-22 05:17:58.232; org.apache.solr.cloud.ZkController; publishing core=collection1 state=recovering collection=collection1
+INFO  - 2015-01-22 05:17:58.232; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2015-01-22 05:17:58.333; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:58.335; org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://127.0.1.1:8983/solr; WaitForState: action=PREPRECOVERY&core=collection1&nodeName=127.0.1.1%3A7574_solr&coreNodeName=core_node2&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-01-22 05:17:58.456; org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/ core=gettingstarted_shard1_replica1 - recoveringAfterStartup=false
+INFO  - 2015-01-22 05:17:58.456; org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica1 url=http://127.0.1.1:7574/solr START replicas=[http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/] nUpdates=100
+WARN  - 2015-01-22 05:17:58.457; org.apache.solr.update.PeerSync; no frame of reference to tell if we've missed updates
+INFO  - 2015-01-22 05:17:58.457; org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was not successful - trying replication. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-22 05:17:58.458; org.apache.solr.cloud.RecoveryStrategy; Starting Replication Recovery. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-22 05:17:58.458; org.apache.solr.cloud.RecoveryStrategy; Begin buffering updates. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-22 05:17:58.458; org.apache.solr.update.UpdateLog; Starting to buffer updates. FSUpdateLog{state=ACTIVE, tlog=null}
+INFO  - 2015-01-22 05:17:58.459; org.apache.solr.cloud.RecoveryStrategy; Attempting to replicate from http://127.0.1.1:8983/solr/gettingstarted_shard1_replica2/. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-22 05:17:58.643; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=1 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"1",
+  "shard":"shard1",
+  "roles":null,
+  "state":"recovering",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-22 05:17:58.806; org.apache.solr.handler.SnapPuller;  No value set for 'pollInterval'. Timer Task not started.
+INFO  - 2015-01-22 05:17:58.811; org.apache.solr.cloud.RecoveryStrategy; No replay needed. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-22 05:17:58.811; org.apache.solr.cloud.RecoveryStrategy; Replication Recovery was successful - registering as Active. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-22 05:17:58.811; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica1 state=active collection=gettingstarted
+INFO  - 2015-01-22 05:17:58.988; org.apache.solr.cloud.RecoveryStrategy; Finished recovery process. core=gettingstarted_shard1_replica1
+INFO  - 2015-01-22 05:17:59.067; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=1 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"1",
+  "shard":"shard1",
+  "roles":null,
+  "state":"active",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-22 05:17:59.199; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:17:59.201; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node3",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"active",
+  "core":"gettingstarted_shard1_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-22 05:17:59.623; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-22 05:18:02.648; org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://127.0.1.1:8983/solr/collection1/ core=collection1 - recoveringAfterStartup=false
+INFO  - 2015-01-22 05:18:02.649; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr START replicas=[http://127.0.1.1:8983/solr/collection1/] nUpdates=100
+INFO  - 2015-01-22 05:18:02.676; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr  Received 95 versions from http://127.0.1.1:8983/solr/collection1/
+INFO  - 2015-01-22 05:18:02.676; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr  Our versions are newer. ourLowThreshold=1490470422317105152 otherHigh=1490470953176530944
+INFO  - 2015-01-22 05:18:02.677; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://127.0.1.1:7574/solr DONE. sync succeeded
+INFO  - 2015-01-22 05:18:02.677; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2015-01-22 05:18:02.678; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2015-01-22 05:18:02.697; org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2015-01-22 05:18:02.697; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-01-22 05:18:02.697; org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was successful - registering as Active. core=collection1
+INFO  - 2015-01-22 05:18:02.698; org.apache.solr.cloud.ZkController; publishing core=collection1 state=active collection=collection1
+INFO  - 2015-01-22 05:18:02.698; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2015-01-22 05:18:02.767; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:18:02.773; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=1 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"1",
+  "shard":"shard1",
+  "roles":null,
+  "state":"active",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-22 05:18:03.032; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-22 05:29:38.510; org.eclipse.jetty.server.Server; Graceful shutdown SocketConnector@0.0.0.0:7574
+INFO  - 2015-01-22 05:29:38.741; org.eclipse.jetty.server.Server; Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/home/shubhanshu/solr/solr-4.10.3/node2/solr-webapp/webapp/},/home/shubhanshu/solr/solr-4.10.3/node2/webapps/solr.war
+INFO  - 2015-01-22 05:29:39.743; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=327582951
+WARN  - 2015-01-22 05:29:39.744; org.apache.solr.cloud.RecoveryStrategy; Stopping recovery for core=collection1 coreNodeName=core_node2
+INFO  - 2015-01-22 05:29:39.745; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica1 state=down collection=gettingstarted
+INFO  - 2015-01-22 05:29:39.815; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:29:39.845; org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica1 state=down collection=gettingstarted
+INFO  - 2015-01-22 05:29:39.922; org.apache.solr.cloud.ZkController; publishing core=collection1 state=down collection=collection1
+INFO  - 2015-01-22 05:29:39.922; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2015-01-22 05:29:39.967; org.apache.solr.core.SolrCore; [gettingstarted_shard2_replica1]  CLOSING SolrCore org.apache.solr.core.SolrCore@269a2137
+INFO  - 2015-01-22 05:29:39.967; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard2_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-22 05:29:39.968; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=0,transaction_logs_total_number=0}
+INFO  - 2015-01-22 05:29:39.969; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2015-01-22 05:29:39.969; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2015-01-22 05:29:39.969; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2015-01-22 05:29:40.192; org.apache.solr.core.SolrCore; [gettingstarted_shard2_replica1] Closing main searcher on request.
+INFO  - 2015-01-22 05:29:40.210; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2015-01-22 05:29:40.271; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node4",
+  "numShards":"2",
+  "shard":"shard2",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard2_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-22 05:29:40.332; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:29:40.333; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard1_replica2",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-22 05:29:40.343; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2015-01-22 05:29:40.411; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/data/index [CachedDir<<refCount=0;path=/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/data/index;done=false>>]
+INFO  - 2015-01-22 05:29:40.411; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/data/index
+INFO  - 2015-01-22 05:29:40.411; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/data [CachedDir<<refCount=0;path=/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/data;done=false>>]
+INFO  - 2015-01-22 05:29:40.412; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard2_replica1/data
+INFO  - 2015-01-22 05:29:40.412; org.apache.solr.core.SolrCore; [gettingstarted_shard1_replica1]  CLOSING SolrCore org.apache.solr.core.SolrCore@56e1333c
+INFO  - 2015-01-22 05:29:40.413; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=0,transaction_logs_total_number=0}
+INFO  - 2015-01-22 05:29:40.413; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node3",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "core":"gettingstarted_shard1_replica1",
+  "collection":"gettingstarted",
+  "node_name":"127.0.1.1:7574_solr",
+  "base_url":"http://127.0.1.1:7574/solr"}
+INFO  - 2015-01-22 05:29:40.413; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2015-01-22 05:29:40.413; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2015-01-22 05:29:40.414; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2015-01-22 05:29:40.486; org.apache.solr.core.SolrCore; [gettingstarted_shard1_replica1] Closing main searcher on request.
+INFO  - 2015-01-22 05:29:40.499; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2015-01-22 05:29:40.500; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/data/index [CachedDir<<refCount=0;path=/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/data/index;done=false>>]
+INFO  - 2015-01-22 05:29:40.500; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/data/index
+INFO  - 2015-01-22 05:29:40.501; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/data [CachedDir<<refCount=0;path=/home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/data;done=false>>]
+INFO  - 2015-01-22 05:29:40.501; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/shubhanshu/solr/solr-4.10.3/node2/solr/gettingstarted_shard1_replica1/data
+INFO  - 2015-01-22 05:29:40.501; org.apache.solr.core.SolrCore; [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@7bad9a63
+INFO  - 2015-01-22 05:29:40.501; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=2,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=3694978,transaction_logs_total_number=5}
+INFO  - 2015-01-22 05:29:40.501; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2015-01-22 05:29:40.502; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2015-01-22 05:29:40.502; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2015-01-22 05:29:40.521; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2015-01-22 05:29:40.522; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=1 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"1",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr"}
+INFO  - 2015-01-22 05:29:40.589; org.apache.solr.core.SolrCore; [collection1] Closing main searcher on request.
+INFO  - 2015-01-22 05:29:40.598; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2015-01-22 05:29:40.598; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/data [CachedDir<<refCount=0;path=/home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/data;done=false>>]
+INFO  - 2015-01-22 05:29:40.598; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/data
+INFO  - 2015-01-22 05:29:40.598; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/data/index [CachedDir<<refCount=0;path=/home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/data/index;done=false>>]
+INFO  - 2015-01-22 05:29:40.598; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/shubhanshu/solr/solr-4.10.3/node2/solr/collection1/data/index
+INFO  - 2015-01-22 05:29:40.599; org.apache.solr.cloud.Overseer; Overseer (id=93183499219107843-127.0.1.1:7574_solr-n_0000000028) closing
+INFO  - 2015-01-22 05:29:40.600; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Overseer Loop exiting : 127.0.1.1:7574_solr
+WARN  - 2015-01-22 05:29:40.706; org.apache.solr.cloud.LeaderElector$ElectionWatcher; 
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /collections/collection1/leader_elect/shard1/election
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1472)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:290)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:287)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:74)
+	at org.apache.solr.common.cloud.SolrZkClient.getChildren(SolrZkClient.java:287)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:94)
+	at org.apache.solr.cloud.LeaderElector.access$200(LeaderElector.java:55)
+	at org.apache.solr.cloud.LeaderElector$ElectionWatcher.process(LeaderElector.java:358)
+	at org.apache.solr.common.cloud.SolrZkClient$3$1.run(SolrZkClient.java:209)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+WARN  - 2015-01-22 05:29:40.707; org.apache.solr.common.cloud.ZkStateReader$3; ZooKeeper watch triggered, but Solr cannot talk to ZK
+WARN  - 2015-01-22 05:29:40.707; org.apache.solr.cloud.LeaderElector$ElectionWatcher; 
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /collections/gettingstarted/leader_elect/shard2/election
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1472)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:290)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:287)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:74)
+	at org.apache.solr.common.cloud.SolrZkClient.getChildren(SolrZkClient.java:287)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:94)
+	at org.apache.solr.cloud.LeaderElector.access$200(LeaderElector.java:55)
+	at org.apache.solr.cloud.LeaderElector$ElectionWatcher.process(LeaderElector.java:358)
+	at org.apache.solr.common.cloud.SolrZkClient$3$1.run(SolrZkClient.java:209)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR - 2015-01-22 05:29:42.101; org.apache.solr.cloud.Overseer$ClusterStateUpdater; could not read the data
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /overseer_elect/leader
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.solr.common.cloud.SolrZkClient$8.execute(SolrZkClient.java:307)
+	at org.apache.solr.common.cloud.SolrZkClient$8.execute(SolrZkClient.java:304)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:74)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:304)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.checkIfIamStillLeader(Overseer.java:321)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.access$300(Overseer.java:90)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater$1.run(Overseer.java:293)
+WARN  - 2015-01-22 05:29:42.205; org.apache.solr.cloud.LeaderElector$ElectionWatcher; 
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /collections/gettingstarted/leader_elect/shard1/election
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1472)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:290)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:287)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:74)
+	at org.apache.solr.common.cloud.SolrZkClient.getChildren(SolrZkClient.java:287)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:94)
+	at org.apache.solr.cloud.LeaderElector.access$200(LeaderElector.java:55)
+	at org.apache.solr.cloud.LeaderElector$ElectionWatcher.process(LeaderElector.java:358)
+	at org.apache.solr.common.cloud.SolrZkClient$3$1.run(SolrZkClient.java:209)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+INFO  - 2015-01-22 05:29:42.211; org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/home/shubhanshu/solr/solr-4.10.3/node2/solr-webapp/webapp/},/home/shubhanshu/solr/solr-4.10.3/node2/webapps/solr.war
