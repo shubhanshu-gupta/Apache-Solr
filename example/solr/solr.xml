@@ -42,4 +42,6 @@
     <int name="connTimeout">${connTimeout:0}</int>
   </shardHandlerFactory>
 
+<solr persistent="true" sharedLib="../lib">
+
 </solr>
